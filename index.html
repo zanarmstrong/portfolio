@@ -36,7 +36,6 @@
   }
 
   .entry {
-    width: 310px;
     float: left;
     display: inline-block;
     margin: 0px 20px 20px 0px;
@@ -54,8 +53,6 @@
   }
 
   .entry img {
-    width: 100%;
-    max-width: 300px;
     height: auto;
     box-shadow: 2px 2px 6px #ccc;
     cursor: pointer;
@@ -84,18 +81,31 @@
 
 
 
-  @media screen and (max-width: 600px){
+  @media (min-width: 735px){
 
     .entry {
-        width: 100%;
+        width: 310px;
       }
 
     .entry img {
-        max-width: 500px;
+        width: 100%;
+        max-width: 300px;
     }
 
   }
 
+  @media (max-width: 735px){
+
+    .entry {
+        max-width: 100%;
+      }
+
+    .entry img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+  }
 
   .entry .author {
     margin: 0 0 1em 0;
