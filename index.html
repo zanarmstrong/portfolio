@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+  body {
+    width: 1000px;
+    max-width: 90%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  p, li {
+    color: #575757;
+  }
+
+  .intro p,li {
+    font-size: 16px;
+  }
+
+  h1,h2 {
+    margin-block-end: 0em;
+    font-family: Oswald, sans-serif;
+  }
+
+
+  .gallery {
+    max-width: 1000px;
+    text-align: left;
+  }
+
+  .subtitle {
+    margin: 0px 0px 40px 0px;
+    font-family: Oswald, sans-serif;
+  }
+
+  .entry {
+    width: 310px;
+    float: left;
+    display: inline-block;
+    margin: 0px 20px 20px 0px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .entry .title {    
+    margin-bottom:2px;
+    color: black;
+  }
+
+  .entry h4 {
+    margin-bottom:2px;
+  }
+
+  .entry img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    box-shadow: 2px 2px 6px #ccc;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+
+  .entry  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .section {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .section > div {
+    float: left;
+    display: inline-block;
+    margin: 0px 18px 18px 0px;
+    padding: 2px;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+
+  @media screen and (max-width: 600px){
+
+    .entry {
+        width: 100%;
+      }
+
+    .entry img {
+        max-width: 500px;
+    }
+
+  }
+
+
+  .entry .author {
+    margin: 0 0 1em 0;
+    font-size: 14px;
+    color: #999;
+  }
+</style>
+  <body>
+  <div class="intro">
+    <h1>Zan Armstrong</h1>
+    <p class="subtitle">Visualizing for Analysis & Decision Making</p>
+
+    <p>I am a data visualization engineer, designer, and researcher. As part of <a href="https://research.google/people/106275/">Google’s Applied Sciences team</a>, I work with data analysts, scientists, and machine learning engineers to create visualizations that help them make new discoveries and improve people's lives.</p>
+
+    <p>Previously as a freelancer I created visualizations for Yale University, Kickstarter, Google, UC Berkeley, National Geographic, and more.</p>
+
+    <p>My work as a visualiztion specialist is grounded in my experience as a data scientist. I'm especially fascinated by crafting visualizations for analysis and decision-making where the discovery has not yet been made, but in which the creation process drives a conversation about what might be most important in the data and I create data-to-shape mappings that reveal those features.</p>
+
+    <p style="text-align: right"><a href="mailto:hi.zanarmstrong@email.com">contact me</a></p>
+
+
+  </div>
+
+  <div class="gallery">
+    <div  class="section">
+
+      <h2>Awards & Museum Exhibitions</h2>
+
+      <div class="entry">
+        <h4>Kantar Information is Beautiful - Silver</h4>
+        <p class="title">Why are So Many Babies Born Around 8am</p>
+        <p class="author">Scientific American</p>
+        <a href="https://blogs.scientificamerican.com/sa-visual/why-are-so-many-babies-born-around-8-00-a-m/"><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/babies.png"/></a>
+        <p>It is common to aggregate data over time when striving for simplicity, but sometimes the story is revealed in the details: minutes, hours, days, and weeks. To learn more about our collaborative creation process, supported editor Jen Christiansen, read <a href="https://www.visualcinnamon.com/2017/10/creating-baby-births-visual/">Nadieh Bremer's</a> and <a href="https://medium.com/@zanarmstrong/story-behind-the-viz-the-baby-spike-21d0cd7bc54f">my</a> "stories behind the viz".</p>
+        <p><a href="https://blogs.scientificamerican.com/sa-visual/why-are-so-many-babies-born-around-8-00-a-m/">Scientific American</a>, <a href="https://www.informationisbeautifulawards.com/showcase/2100">Kantar Awards</a>.</p>
+       
+      </div>
+
+      <div class="entry">
+        <h4>Ars Electronica Museum: Understanding AI</h4>
+        <p class="title">Activation Atlas</p>
+        <p class="author">Distill.pub</p>
+        <a href="https://distill.pub/2019/activation-atlas/"><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/atlas.png"/></a>
+        <p>The goal of this collaboration with Sean Carter, Ian Johnson, Chris Olah, and Ludwig Schubert is, essentially, to see what the AI model sees.</p>
+        <p>It's not enough to look at the activations of neurons seperately, but to see combinations of neurons activating together at varied levels and to reveals relationship between sets of activations (just it's not enough to know the alphabet to read, to understand written language you need to understand how the letter combine to communicate concepts).</p>
+        <p><a href="https://distill.pub/2019/activation-atlas/">Activation Atlas</a></p>
+      </div>
+
+      <div class="entry">
+        <h4>SF Moma, Cooper Hewitt, Cube Design</h4>
+        <p class="title">Metagenomics</p>
+        <p class="author">with Stamen Design, for UC Berkeley</p>
+        <a href="https://hi.stamen.com/uc-berkeley-metagenomics-lab-releases-new-images-of-complex-microbiome-environment-discovered-a80000770c93#.bmz6vmi1y"><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/metag.png"/></a>
+        <p>We originally created this tool for researchers at UC Berkeley to study the genetics of micro-ecosystems in the gut of an infant, the inside of a nuclear reactor, or between a dolphin's teeth. Yet, it was also embraced by the art & design community: featured in SF Moma's <a href="https://www.sfmoma.org/exhibition/designed-california/">Designed in California exhibit</a>, and on the cover of the member calender, and then exhibited by the Cooper Hewitt, Smithsonian Design Museum in New York City and Cube Design museum in Kerkrade, Netherlands as part of the <a href="https://www.cooperhewitt.org/2018/11/15/cooper-hewitt-and-cube-design-museum-to-co-organize-2019-design-triennial/">2019 Design Triennial</a>.</p>
+        <p>Interestingly one of the most visually striking design decisions I made, the extreme contrast between the value 0 shown in black and the value 1 shown in near-white, were driven by the science. In most colorschemes, 0 and 1 are similar hues because 0 and 1 are numerically quite close. However, in this application, "none" and "at least 1" had completely opposite implications scientifically so needed to look completely different.</p>
+        <p></p>
+        <p><a href="https://hi.stamen.com/uc-berkeley-metagenomics-lab-releases-new-images-of-complex-microbiome-environment-discovered-a80000770c93#.bmz6vmi1y">Stamen Design</a></p>
+      </div>
+    </div>
+
+
+    <div  class="section">
+
+     <h2>Featured Presentations & Research</h2>
+
+      <div class="entry">
+        <h4>Visualizing Simpson's Paradox</h4>
+        <p class="author">InfoVis Paper 2014</p>
+        <a href="https://research.google/pubs/pub42901/"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/comet.png"/></a>
+        <p>This research shows how it's easy to draw the wrong causal conclusion using standard visualization methods when the sizes of subgroups of our data are changing over time. To address this, Martin Wattenberg and I introduced a variation on the scatterplot that reveals changes in mix: the "comet chart". In this chart, the metric of interest is on the y-axis and the size of each subgroup is on the x-axis. That way we can see changes in our metric, the size of the groups, or both. We can see if all groups are "flowing together" or if different groups are changing in different ways.</p>
+        <p>One specific application is to <a href="https://docs.google.com/presentation/d/1jRnI2MTChx847V0d2_NFEk9DgHAxcF8OcsG4_z6ObMQ/edit#slide=id.g1cd892e7b0_0_505">reveal changes in voting patterns</a> between election years, with the number of voters on the x-axis and the % change for a particular party on the y-axis. More in this .</p>
+        <p>Research cited in Alberto Cairo’s <a href="https://www.goodreads.com/book/show/26401716-the-truthful-art">The Truthful Art</a>, Scott Murray's <a href="https://alignedleft.com/work/d3-book-2e">Interactive Data Visualization for the Web</a> in addition to academic literature.</p>
+        <p><a href="https://research.google/pubs/pub42901/">InfoVis Paper</a>, <a href="https://docs.google.com/presentation/d/1glF_JcGVRIahzfrYyw9OKDDB9eWeUxpfD2vCDJTkTqo/edit">Slides</a></p>
+      </div>
+
+      <div class="entry">
+        <h4>Data Visualization for Scientific Analysis</h4>
+        <p class="author">SciPy Conference - 2018</p>
+        <a href="https://www.youtube.com/watch?v=IzXxTeQhdO0"><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/scipy.png"/></a>
+        <p>Demonstrating that the quality of a visualization depends on your goals, context, and constraints, I provide concrete recommendations for creating effective visualizations for scientific discovery based on my experience working with world class scientists.</p>
+        <p><a href="https://www.youtube.com/watch?v=IzXxTeQhdO0">Video</a>, <a href="https://docs.google.com/presentation/d/15kKkC4QIUKkq_uy5EKov5LzPh93pWcLhe3ITKJ0NEVY/edit#slide=id.p">Slides</a></p>
+      </div>
+
+      <div class="entry">
+        <h4>Everything is Seasonal</h4>
+        <p class="author">OpenVisConf - 2016</p>
+        <a href="https://www.youtube.com/watch?v=IiF4-g001EQ"><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/seasonal.png"/></a>
+        <p>In this talk you'll learn why your commute is worse in November than June, why so many babies are born around 8:30am, and why it's almost always a terrible idea to look at monthly data.</p>
+        <p>Cited in RJ Andrew’s <a href="https://infowetrust.com/project/272">Info We Trust</a>.</p>
+        <p><a href="https://www.youtube.com/watch?v=IiF4-g001EQ">Video</a>, <a href="https://slides.com/zanarmstrong/everything-is-seasonal">Slides</a></p>
+      </div>
+
+
+    </div>
+
+    <div  class="section">
+
+
+    <div  class="section">
+
+      <h2>Data Visualization for Science, Analysis, & Decision Making</h2>
+      <p>While much of my recent work on this topic is not public (or not *yet* public), I'm pleased to be able to share some of my work here.</p>
+
+      <div class="entry">
+        <h4>SARS-CoV-2 in WasteWater</h4>
+        <p class="author">Stanford</p>
+        <img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/covid.png"/>
+        <p>Sampling RNA from wastewater treatment plants has incredible potential for understanding community-level transmission of infectious diseases, including Covid-19.</p>
+        <p>I'm visualizing data collected from treatment plants, and public health officials at the county and state level are using this data daily to inform their decisions. This research, data collection, and analysis is being led by <a href="https://cee.stanford.edu/person/alexandria-boehm">Dr. Alexandria Boehm and her research group at Stanford</a>, and I"m volunteering my viz expertise.</p>
+        <p>Read more in the <a href="https://sanjosespotlight.com/researchers-turn-to-human-waste-to-sniff-out-clues-about-covid-19-in-santa-clara-county/">San Jose Spotlight</a></p>
+      </div>
+
+
+      <div class="entry">
+        <h4>ML (and viz) to find new anti-malarial drugs</h4>
+        <p class="author">Google Applied Science</p>
+        <a href="https://advances.sciencemag.org/content/6/39/eaba9338.full"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/malaria.jpg"/></a>
+        <p>Over the course of 3 years, I worked closely with scientists and ML experts as they built models to create new methods in the fight to find new anti-malarial drugs. Visualization played varied critical roles throughout this work, from establishing a color scheme for a key concept used over the course of the project, to debugging the model, to interpreting the results. Being included as an author in the paper is a high bar, demonstrating that the work contributed not only to communicating results but also to the discoveries themselves.</p>
+        <p><a href="https://advances.sciencemag.org/content/6/39/eaba9338.full">Published in Science Advances</a></p>
+      </div>
+
+      <div class="entry">
+        <h4>Scientific Analysis Tool</h4>
+        <p class="author">48 line charts with 10 lines each > a fancy 3-d one</p>
+        <a href="https://docs.google.com/presentation/d/1aJmsjx5wtL6m-ut_Kox_hQkQLycohrC4v3drQ9uBJvg/edit#slide=id.g42e5c5e85a_0_71"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/jcap.gif"></a>
+        <a href="https://docs.google.com/presentation/d/1aJmsjx5wtL6m-ut_Kox_hQkQLycohrC4v3drQ9uBJvg/edit#slide=id.g42e5c5e85a_0_71"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/3d.gif"></a>
+        <p>This visualization resulted in the scientists discovering something about their experiment that they had assumed was not possible. Which led to my itereating on the visual form, creating the 'user-driven animated slope lines' in the bottom right, to make this feature of the data even more explorable.</p>
+        <p> One especially interesting aspect of this project was that the obvious visualization was to show it in 3-d as there were 3 key values of interest. Unfortunately, while the researchers cared most about changes in slope the inherent small-scale local noice in the experimental data made it too hard to see the bigger picture in the 3-d charts. The 48 lines charts actually showed 10x more data than the 3-d one, and were more effective for making new discoveries (publication in process).</p>
+        <p><a href="https://www.youtube.com/watch?v=p8EtCUyLxIE%3Ft%3D14m42s">Presented at University of Washington's eSciences Seminar Series</a></p>
+      </div>
+
+
+
+      <div class="entry">
+        <h4>Covid Response</h4>
+        <p class="author">DataVisHub at Google</p>
+        <a href=""/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/mobility.png"/></a>
+        <p>In March 2020, I founded and led the Data Vis Hub: a group of Googlers with data vis skills lending their expertise to projects across Google related to Covid-19. For example, our group contributed to the Google Search and News teams visualizations of <a href="https://news.google.com/covid19/map">covid statistics</a>. As another example, <a href="https://roadtolarissa.com/">Adam Pearce</a> and I collaborated to create <a href="https://support.google.com/covid19-mobility/answer/9825414?hl=en&ref_topic=9822927">visualizations</a> and <a href="https://support.google.com/covid19-mobility/checklist/9834261?hl=en&ref_topic=9822927">thought questions</a> to contextualize the data in the Google's <a href="https://www.google.com/covid19/mobility/">Community Mobility Reports</a>.
+      </div>
+
+      <div class="entry">
+        <h4>Statistics: Unlocking the Power of Data</h4>
+        <p class="author">Contributed data vis exercises to textbook</p>
+        <a href="https://www.wileyplus.com/math-and-statistics/lock-statistics-unlocking-the-power-of-data-2e-eprof13947"><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/statsbook.png"/></a>
+        <p>I developed informative and engaging exercises for the data visualization chapter of this college-level statistics textbook.</p>
+        <p><a href="https://www.wileyplus.com/math-and-statistics/lock-statistics-unlocking-the-power-of-data-2e-eprof13947">Statistics Textbook</a></p>
+      </div>
+
+      <div class="entry">
+        <h4>Gene Expression in the Brain</h4>
+        <p class="author">Yale University</p>
+        <a href=""/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/yale.png"/></a>
+        <p>Researchers at Yale's Gerstein lab had an amazing dataset that they wanted to make more shareable and explorable for scientists. This dataset was particularly special because it included *quantitative* (rather than qualitative) measurements of how much genes in the brain were expressed and were specific to expression in different *cell types*. The design emphasized these features of the dataset uniquely valuable. A scatterplot shows both quantitative expression levels and fold enrichment, the dendrogram of nested cell types includes hover and click interactions to highlight/filter the scatterplot and table, and sortable table with a one-d plot reveals detailed expression measurements of each selected gene for all cell types.</p>
+      </div>
+
+
+
+    </div>
+
+
+    <div  class="section">
+
+      <h2>For Fun & Curiosity</h2>
+
+      <div class="entry">
+        <h4>A Jittery Line</h4>
+        <p class="author"></p>
+        <a href="https://bl.ocks.org/zanarmstrong/raw/5fbc4b93f62227dedeb7/"><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/dancingline.gif"/></a>
+        <p>This just delights me, even 6+ years after I made it while experimenting with animation as a student in a 10 week intensive at <a href="https://sfpc.io/">SFPC: School for Poetic Computation</a>.</p>
+        <p><a href="https://bl.ocks.org/zanarmstrong/raw/5fbc4b93f62227dedeb7/">Draw a Jittery Line</a></p>
+      </div>
+
+
+      <div class="entry">
+        <h4>Voronoi Diagrams Explorable</h4>
+        <p class="author"></p>
+        <a href="http://bl.ocks.org/zanarmstrong/raw/b1c051113be144570881/"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/voronoi.png"/></a>
+        <p>In my <a href="http://weatherlines.zanarmstrong.com/#city=SAN%20FRANCISCO&metric=cloudCover">Weather Lines</a> project, I used Voronoi polygons to capture click events on thin lines. My curiosity about how Voronoi polygons were defined mathematically led to this explorable on the relationship between points, the bisecting lines that form triangles, circles, and the resulting polygons.</p>
+        <p><a href="http://bl.ocks.org/zanarmstrong/raw/b1c051113be144570881/">Explorable</a></p>
+      </div>
+
+      
+      <div class="entry">
+        <h4>High Contrast Cards for Babies</h4>
+        <p class="author"></p>
+        <img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/forbabies.jpg"/>
+        <p>Young babies love looking at high contrast cards and the designs make viz-loving new parents smile.</p>
+        <p>I had fun designing simple b/w charts that were still realistic: timeseries that had similar seasonal periods but different overall growth rates, a saddle point and local maximas in the contour plot, a correlation between x and y in the scatterplot but some outliers as well, and a pie chart with only two slices.</p>
+        <p>PS: Babies all love the contour plots the most. Presumably since they look like eyes.</p>
+      </div>
+
+
+      <div class="entry">
+        <h4>Which is Bigger?</h4>
+        <p class="author">Created because Africa is really big.</p>
+        <a href=""/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/bigger.png"/></a>
+        <p>If you love maps or have watched the <a href="https://www.youtube.com/watch?v=vVX-PrBRtTY">West Wing</a>, you know that Greenland is not actually as big as Africa despite looking the same size on a mercator projection.</p>
+        <p>But, do you have a good intuition for *what the relative sizes actually are* between Saudi Arabia and Alaska or Europe vs Antarctica? This experiment was a chance to explore those comparisons by overlay pairs of regions using the azimuthalEqualArea projection.</p>
+        <p><a href="http://bl.ocks.org/zanarmstrong/raw/caa2da1ea1558cdc3357/#scale=558.1&center0=-24.977024715823752,-23.582737368446125&center1=-19.91031349052879,-18.38051022982284">Explorable</a>, <a href="https://flowingdata.com/2015/07/07/a-more-realistic-perspective-of-country-sizes/">on Flowing Data</a></p>
+      </div>
+
+
+      <div class="entry">
+        <h4>Perceptual uniformity *and* distance</h4>
+        <p class="author">What is the trade-off?</p>
+        <a href="https://bl.ocks.org/zanarmstrong/raw/7199ed8f71560888eb0cec6f593c5491/"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/perceptualdistance.png"/></a>
+        <p>Perceptual uniformity, including when the colors are converted to greyscale, has become a highly valued attribute for data vis colorschemes.</p>
+        <p>Yet, there is a sacrifice: to achieve perceptual uniformity and other desired attributes, there is typically less overall perceptual differentiation. This means that values have to be further apart numerically to appear as noticably different colors. IE - if the numbers 1-100 were visualized using D3's "less angry rainbow" most people would be able to perceive the difference between 0 and 10, but those values would look the same using "viridis".</p>
+        <p>This set of charts explores the relationship between perceptual uniformity and perceptual distance for 11 common colormaps, and illustrates an alternative way to acheive uniformity without changing the hues by "straightening" the colormap.</p>
+        <p></p>
+        <p><a href="https://bl.ocks.org/zanarmstrong/raw/7199ed8f71560888eb0cec6f593c5491/"></a></p>
+      </div>
+
+
+      <div class="entry">
+        <h4>Weather Circles (and Lines)</h4>
+        <p class="author">Mark Twain was wrong</p>
+        <a href="http://weather.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover&colored=1"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/weathercircles.png"/></a>
+        <a href="http://weatherlines.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/weatherlines.png"/></a>
+        <p>I lost a bet. It is colder in January than June in San Francisco.</p>
+        <p>But, I made two visualizations showing typical hourly/daily cloudiness, temp, and windspeed based on 30 years of data from 25 cities in the US.</p>
+        <p>My favorite parts of this experiment was experiencing how different the same data felt when shown in these two different visual encodings. In one, each line is an hour of the day, x is month, and y is temp. In the other, each curve is one day of the year, the angle is the hour of day, and the distance from center is the temp.</p>
+        <p><a href=""></a></p>
+      </div>
+
+      <div class="entry">
+        <h4>D3 Number Format "Tiny Tool"</h4>
+        <p class="author"></p>
+        <a href="http://bl.ocks.org/zanarmstrong/raw/05c1e95bf7aa16c4768e/"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/formatter.png"/></a>
+        <p>These two tiny tools for <a href="http://bl.ocks.org/zanarmstrong/raw/05c1e95bf7aa16c4768e/">number</a> and <a href="https://bl.ocks.org/zanarmstrong/raw/ca0adb7e426c12c06a95/">date/time formatting</a> were the second and third bl.ock I ever created. This might also be the closest I'll ever get to being a celebrity.</p>
+        <img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/freeman.png">
+        <p><a href="http://bl.ocks.org/zanarmstrong/raw/05c1e95bf7aa16c4768e/"></a></p>
+      </div>
+
+    </div>
+
+    <div  class="section">
+
+      <h2>The Stories Behind the Viz, and other Writings</h2>
+
+      <div class="entry">
+        <h4>Story of: Exploring the Amazon with Code and Data</h4>
+        <p class="author">with Stamen Design, for National Geographic</p>
+        <a href="https://hi.stamen.com/exploring-the-amazon-with-code-and-data-5750afec6ef2#.6rm5lov7q"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/amazonUnderThreat.png"></a>
+        <p>In this project, my goal was to add functionality on a project that had already launched, which brings in a different set of constraints and challenges than starting from scratch.</p>
+        <p>Read the <a href="https://hi.stamen.com/exploring-the-amazon-with-code-and-data-5750afec6ef2#.6rm5lov7q">Story Behind the Viz</a>.</p>
+      </div>
+
+      <div class="entry">
+        <h4>Story of: The Shapes of Emotions</h4>
+        <p class="author">with Stamen Design, for the Dalai Lama</p>
+        <a href="https://hi.stamen.com/the-shapes-of-emotions-72c3851143e2#.az2xyp29x"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/atlasofemotions.png"></a>
+        <p>"While many types of visualizations strive to be easy to interpret, the “charts” representing the states of each of the 5 emotions goes further. The reader should get an impression of emotion and intensity of emotional states without ever really consciously interpreting it." Read more <a href="https://hi.stamen.com/the-shapes-of-emotions-72c3851143e2#.az2xyp29x">here</a> to learn how I and my colleagues at Stamen Design used math to create shapes that conveyed feelings.</p>
+        <p><a href="https://hi.stamen.com/the-shapes-of-emotions-72c3851143e2#.az2xyp29x">The Shapes of Emotions</a></p>
+      </div>
+
+
+      <div class="entry">
+        <h4>Why Choose: Scrollytelling & Steppers</h4>
+        <p class="author">My Contributions to the Great Debate</p>
+        <a href="https://medium.com/@zanarmstrong/why-choose-scrollytelling-steppers-155a59dd97fe"/><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/atlasstepper.png"></a>
+        <p>In 2016, there was a great debate raging in the data visualization community: storytellers vs steppers. However, like the “which visualization is best” or the “are pie charts really evil” debates, these types of questions don’t really make sense to me.</p>
+        <p>The choices we make in data visualization and storytelling depend on so many things. It depends on your data. It depends on the crux of the meaning in the data and the story that you want to share. It depends on your audience. It depends on how you expect your audience to consume what you’ve created. It depends on your goal. It definitely depends on context. It depends on if it’s a one-off, or a tool that people will use again and again. And, it even depends on aesthetics and what the experience feels like. It just depends.</p>
+        <p>Read more at <a href="https://medium.com/@zanarmstrong/why-choose-scrollytelling-steppers-155a59dd97fe">Why Choose?</a></p>
+      </div>
+
+    </div>
+
+
+  <div style="clear:both;">&nbsp;</div>
+
+</body>
