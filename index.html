@@ -26,10 +26,6 @@
   h1 {
     font-size: 50px;
   }
-  h2 {
-    font-size: 30px;
-  }
-
   h1,h2,h4 {
     margin-block-end: 0em;
     font-family: Oswald, sans-serif;
@@ -90,10 +86,7 @@
     overflow: hidden;
   }
 
-
-
-  @media (min-width: 735px){
-
+  @media (min-device-width: 600px){
     .entry {
         width: 310px;
       }
@@ -102,21 +95,23 @@
         width: 100%;
         max-width: 300px;
     }
-
   }
 
-  @media (max-width: 735px){
-
+  @media (max-device-width: 600px) {
+    h2 {
+      font-size: 60px;
+    }
     .entry {
-        max-width: 100%;
-      }
+          max-width: 100%;
+        }
 
     .entry img {
-        width: 100%;
-        max-width: 100%;
+          width: 100%;
+          max-width: 100%;
     }
-
   }
+
+
 
   .entry .author {
     margin: 0 0 1em 0;
@@ -133,7 +128,7 @@
 
     <p>Previously as a freelancer I created visualizations for Yale University, Kickstarter, Google, UC Berkeley, National Geographic, and more.</p>
 
-    <p>My work as a visualization specialist is grounded in my experience as a data scientist. I'm especially fascinated by crafting visualizations for analysis and decision-making where the discovery has not yet been made, but in which the creation process drives a conversation about what might be most important in the data. I create data-to-shape mappings that reveal those features.</p>
+    <p>My work as a visualization specialist is grounded in my experience as a data scientist. In particular, I craft visualizations for analysis and decision-making where the discovery has not yet been made, but in which the creation process drives a conversation about what might be most important in the data. I create data-to-shape mappings that reveal those important features, resulting in new discoveries.</p>
 
     <p style="text-align: right"><a href="mailto:hi.zanarmstrong@email.com">contact me</a></p>
 
@@ -216,7 +211,7 @@
     <div  class="section">
 
       <h2>Data Visualization for Science, Analysis, & Decision Making</h2>
-      <p>While much of my recent work on this topic is not public (or not *yet* public), I'm pleased to be able to share some of my work here.</p>
+      <p>While much of my recent work on this topic is not public, I'm pleased to be able to share some of my work here.</p>
 
 
       <div class="entry">
