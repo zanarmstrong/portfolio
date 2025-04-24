@@ -8,7 +8,9 @@
     width: 1000px;
     max-width: 90%;
     margin: auto;
-    font-family: 'Hoefler Text', sans-serif;
+    font-family: 'Hoefler Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.4;
+    padding: 5px;
   }
 
   p, li {
@@ -18,6 +20,8 @@
 
   img {
     loading: lazy;
+    max-width: 100%;
+    height: auto;
   }
 
   .intro p,li {
@@ -29,19 +33,21 @@
     margin-block-end: 0em;
     font-family: 'Lato', sans-serif;
   }
-  h4 {
-    
-    font-family: 'Hoefler Text', sans-serif;
+
+  h4 {  
+    font-family: 'Hoefler Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
   }
 
   h2 {
-    margin-block-end: 0em;
+    margin-block-end: 0.3em;
     font-weight: 400;
     font-size: 1.8em;
     font-family: 'Lato', sans-serif;
+    margin-top: 1em;
+    clear: both;
   }
-
-
 
   .gallery {
     max-width: 1000px;
@@ -50,11 +56,10 @@
 
   .intro .subtitle {
     margin: 30px 0px 2px 0px;
-    font-family: 'Hoefler Text', sans-serif;
+    font-family: 'Hoefler Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: black;
-
   }
 
   .entry {
@@ -66,30 +71,36 @@
   }
 
   .entry .title {    
-    margin-bottom:2px;
+    margin-bottom: 2px;
     color: black;
   }
 
   .entry h4 {
-    margin-bottom:2px;
+    margin-bottom: 2px;
+    margin-top: 0.5em;
   }
 
   .entry img {
     height: auto;
-    box-shadow: 2px 2px 6px #ccc;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
     cursor: pointer;
     border-radius: 10px;
+    transition: transform 0.2s ease;
   }
 
+  .entry img:hover {
+    transform: scale(1.02);
+  }
 
   p {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.4;
   }
 
   .section {
     width: 100%;
     display: inline-block;
+    margin-bottom: 10px;
   }
 
   .section > div {
@@ -101,36 +112,80 @@
     overflow: hidden;
   }
 
-  @media (min-device-width: 600px){
+  /* Desktop and tablet */
+  @media (min-width: 768px) {
     .entry {
-        width: 310px;
-      }
+      width: 310px;
+    }
 
     .entry img {
-        width: 100%;
-        max-width: 300px;
+      width: 100%;
+      max-width: 300px;
     }
 
     .intro p,li {
       margin-top: 0px;
     }
-
   }
 
-  @media (max-device-width: 600px) {
+  /* Small tablet to large phone */
+  @media (max-width: 767px) {
+    body {
+      padding: 15px;
+    }
+    
     h1 {
-      font-size: 5em;
+      font-size: 2.8em;
     }
+    
     h2 {
-      font-size: 3em;
+      font-size: 2em;
+      margin-top: 2em;
     }
+    
     .entry {
-          max-width: 100%;
-        }
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 30px;
+      float: none;
+    }
 
     .entry img {
-          width: 100%;
-          max-width: 100%;
+      width: 100%;
+    }
+    
+    .section > div {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  /* Phone */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2.2em;
+    }
+    
+    h2 {
+      font-size: 1.6em;
+    }
+    
+    p, li, .intro p, .intro li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    .entry h4 {
+      font-size: 18px;
+    }
+    
+    .intro .subtitle {
+      font-size: 16px;
+    }
+    
+    body {
+      padding: 10px;
     }
   }
 
@@ -141,16 +196,17 @@
   .entry .author {
     margin: 0 0 1em 0;
     font-size: 16px;
-    color: #999;
+    color: #777;
   }
 
   .learnmore h5 {
     margin-bottom: 2px;
+    margin-top: 10px;
     color: #4a4a4a;
   }
 
   .learnmore p {
-    margin: 0px;
+    margin: 0;
     font-size: 14px;
   }
 
@@ -159,27 +215,51 @@
   }
 
   .sci {
-    line-height: 16px;
+    line-height: 1.4;
   }
 
   .learnmore .sci {
     margin-bottom: 10px;
   }
 
+  a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
 
+  a:hover {
+    color: #004499;
+    text-decoration: underline;
+  }
+
+  /* Space between sections */
+  .section + .section {
+    margin-top: 20px;
+  }
+  
+  .intro-text p {
+    margin-bottom: 18px;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
 </style>
   <body>
   <div class="intro">
     <h1>Zan Armstrong</h1>
     <p class="subtitle">Visualizing Data for Analysis & Decision Making</p>
-    <p>As a data visualization and data strategy consultant, I change how people look at their data (literally) -- leading to new discoveries and deeper understanding, sparking data-driven questions, and enabling better decision-making.</p>
-    <p></p>    
-    <p>I develop novel visualization solutions for complex analytical problems in partnership with domain experts. This has included creating visualizations used by Yale, Stanford, UC Berkeley, ACLU, Scientific American, National Geographic, the Dalai Lama, CDC, the White House, and companies from early-stage startups to big tech. I've shared my expertise through teaching Design of Data at Stanford's d.school, publishing research at IEEE Viz, mentorship, writing articles, and speaking at visualization conferences.</p>
-    <p></p>
-    <p>My visualization work spans analytical challenges across industries and sectors. I've helped research teams building large-scale computing and ML systems, contributed to scientific discoveries, guided decisions made by senior executives at both start-ups and Google, informed public health officials and scientists tracking emerging pathogens through wastewater data, and helped the Google Search team make data related to COVID-19 accessible to millions of people. My work has been recognized beyond their analytical origins; visualizations originally created to understand bacterial life or AI models have been exhibited at major museums including SF MOMA, Ars Electronica, and Cooper Hewitt.</p>
-    <p></p>
-    <p>My perspective in data visualization is grounded in my experirence as a data analyst, especially in my work forecasting/analyzing revenue data and advising executive stakeholders as a Senior Financial Analyst at Google.</p>  
-    <p></p>
+    
+    <div class="intro-text">
+      <p>I create charts and graphs which change how people look at their data (literally) -- leading to new discoveries and deeper understanding, sparking data-driven questions, and enabling better decision-making.</p>
+      
+      <p>I develop novel ways to look at complex data in partnership with domain experts. This has included creating visualizations used by Yale, Stanford, UC Berkeley, ACLU, Scientific American, National Geographic, the Dalai Lama, CDC, the White House, and companies from early-stage startups to big tech. I've shared my expertise through teaching Design of Data at Stanford's d.school, publishing research at IEEE Viz, mentorship, writing articles, and speaking at visualization conferences.</p>
+      
+      <p>My visualization work spans analytical challenges across industries and sectors. I've helped research teams building large-scale computing and ML systems, contributed to scientific discoveries, guided decisions made by senior executives at both start-ups and Google, informed public health officials and scientists tracking emerging pathogens through wastewater data, and helped the Google Search team make data related to COVID-19 accessible to millions of people. My work has been recognized beyond their analytical origins; visualizations originally created to understand bacterial life or AI models have been exhibited at major museums including SF MOMA, Ars Electronica, and Cooper Hewitt.</p>
+      
+      <p>My perspective in data visualization is grounded in my experirence as a data analyst, especially in my work forecasting/analyzing revenue data and advising executive stakeholders as a Senior Financial Analyst at Google.</p>
+    </div>
   </div>
 
   <div class="gallery">
