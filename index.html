@@ -132,8 +132,24 @@
       font-size: 14px;
     }
     
-    .sci {
-      line-height: 1.4;
+    .learnmore p.sci {
+      display: block;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    
+    .sci a {
+      display: inline;
+    }
+    
+    /* Specific speaking section styles */
+    .learnmore p.sci {
+      margin-bottom: 15px;
+    }
+    
+    /* For the actual text content */
+    .learnmore p.sci {
+      line-height: 1.2;
     }
     
     /* Responsive Layout */
@@ -166,6 +182,18 @@
         font-size: 3em;
       }
     }
+    
+    /* Special style for speaking section */
+    .entry h4 + .learnmore p {
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    
+    /* Targeted style for the sci class */
+    p.sci {
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
@@ -174,9 +202,9 @@
     <p class="subtitle">Visualizing Data for Analysis & Decision Making</p>
     
     <div class="intro-text">
-      <p>I create charts and graphs which change how people look at their data (literally) -- leading to new discoveries and deeper understanding, sparking data-driven questions, and enabling better decision-making.</p>
+      <p>I create charts and graphs which change how people look at their data (literally) -- leading to better decision making, data driven questions, deeper understanding, and new discoveries.</p>
       
-      <p>I've worked with companies from early-stage startups to big tech, and created visualizations used by Yale, Stanford, UC Berkeley, Scientific American, National Geographic, the Dalai Lama, CDC, the White House. As a data visualization specialist on Google's Applied Sciences research team, I worked with scientists, ML engineers, and data scientists to use visualization as a tool in making scientific discoveries.</p>
+      <p>I've worked with companies from early-stage startups to big tech, and created visualizations used by Yale, Stanford, UC Berkeley, Scientific American, National Geographic, the Dalai Lama, CDC, the White House. As a data visualization specialist on Google's Applied Sciences research team, I worked with scientists, ML engineers, and data scientists using charts as tool to contribute to new scientific discoveries.</p>
       
       <p>My work spans analytical challenges across industries and sectors. I've helped research teams building large-scale computing and ML systems, contributed to scientific discoveries, guided decisions made by senior executives at both start-ups and Google, informed public health officials and scientists tracking emerging pathogens through wastewater data, and helped the Google Search team make data related to COVID-19 accessible to millions of people. My work has been recognized beyond their analytical origins; visualizations originally created to understand bacterial life or AI models have been exhibited at major museums including SF MOMA, Ars Electronica, and Cooper Hewitt.</p>
       
@@ -230,7 +258,7 @@
       </div>
 
     <div class="section">
-      <h2>Awards, Museum Exhibitions, Research, and Talk</h2>
+      <h2>Awards, Museum Exhibitions, Viz Research, and a Talk</h2>
 
       <div class="entry">
         <h4>Information is Beautiful - Silver</h4>
@@ -568,10 +596,8 @@
 
     <div  class="section">
 
-      <h2>Speaking</h2>
+      <h2>Talks, Teaching, and more</h2>
       
-      
-      <div class="entry">
         <h4>Guest Speaker</h4>
         <p class="author"></p>
         <div class="learnmore">
@@ -589,22 +615,18 @@
           <p class="sci">TechChange Technology for Data Visualization</p>
           <p class="sci">UC Davis SIAM Mathematics in Industry Speaker Series</p>
         </div>
-      </div>
 
-       <div class="entry">
         <h4>Teaching and Workshops</h4>
         <p class="author"></p>
         <div class="learnmore">
         <p class="sci">Stanford's d.school: taught 10-week "Design of Data" course</p>
-        <p class="sci">Pro bono consulting for <a href="https://www.youtube.com/watch?v=1PHVN6gW82o">ACLU</a>.</p>
+        <p class="sci">Pro bono consulting for ACLU</a>.</p>
         <p class="sci"><a href="https://slides.com/zanarmstrong/deck-2">Intro to Data Visualization for CS teachers<a> in the SF Public School system.</p>
         <p class="sci">Guest teacher at Lowell High School, Lick-Wilmerding High School, Burton High School, AP Giannini Middle School, and BB&N Lower School.</p>
         <p class="sci"><a href="https://docs.google.com/presentation/d/1-gdyFaeqoIs5O3z5SSK7_7lLxdBVUAr2BvYunuy5XcU/edit#slide=id.p">Drawing with Data</a> Workshop</p>
         <p class="sci">Bay Area D3 Meetups including <a href="https://www.youtube.com/watch?v=1PHVN6gW82o">"Math to D3"</a> talk.</p>
         </div>
-      </div>
-
-      <div class="entry">
+   
         <h4>Interviews</h4>
         <p class="author"></p>
         <div class="learnmore">
@@ -612,8 +634,11 @@
           <p class="sci">Jon Schwabish's <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2xpY3l2aXouY29tL2ZlZWQvcG9kY2FzdC8/episode/aHR0cDovL3BvbGljeXZpei5jb20vP3A9Mjk1OA?sa=X&ved=0CAIQuIEEahcKEwio68CPqdbuAhUAAAAAHQAAAAAQAg">Policy Viz Podcast</a></p>
           <p class="sci">Scott Murray's <a href="https://alignedleft.com/work/d3-book-2e">Interactive Data Visualization for the Web</a></p>
           <p class="sci">Ian Johnson's: <a href="https://medium.com/@enjalot/how-do-you-learn-d3-js-ccffc151419b">How do you learn D3.js</a></p>
+        </div>
 
         <h4>Writing</h4>
+        <p class="author"></p>
+        <div class="learnmore">
           <p class="sci"><a href="https://hi.stamen.com/the-shapes-of-emotions-72c3851143e2#.az2xyp29x">The Shapes of Emotions</a></p>
           <p class="sci"><a href="https://medium.com/@zanarmstrong/why-choose-scrollytelling-steppers-155a59dd97fe">Why Choose? The Great Storyteller vs. Stepper Debate</a></p>
           <p class="sci"><a href="https://hi.stamen.com/exploring-the-amazon-with-code-and-data-5750afec6ef2#.6rm5lov7q">Story behind the Viz: Exploring the Amazon with Code and Data</a></p>
