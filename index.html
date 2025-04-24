@@ -1,252 +1,175 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zan Armstrong - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <style>
-  body {
-    width: 1000px;
-    max-width: 90%;
-    margin: auto;
-    font-family: 'Hoefler Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.4;
-    padding: 5px;
-  }
-
-  p, li {
-    color: #575757;
-    margin-bottom: 25px;
-  }
-
-  img {
-    loading: lazy;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .intro p,li {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 3em;
-    margin-block-end: 0em;
-    font-family: 'Lato', sans-serif;
-  }
-
-  h4 {  
-    font-family: 'Hoefler Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    margin-top: 0.5em;
-    margin-bottom: 0.25em;
-  }
-
-  h2 {
-    margin-block-end: 0.3em;
-    font-weight: 400;
-    font-size: 1.8em;
-    font-family: 'Lato', sans-serif;
-    margin-top: 1em;
-    clear: both;
-  }
-
-  .gallery {
-    max-width: 1000px;
-    text-align: left;
-  }
-
-  .intro .subtitle {
-    margin: 30px 0px 2px 0px;
-    font-family: 'Hoefler Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-  }
-
-  .entry {
-    float: left;
-    display: inline-block;
-    margin: 0px 20px 20px 0px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .entry .title {    
-    margin-bottom: 2px;
-    color: black;
-  }
-
-  .entry h4 {
-    margin-bottom: 2px;
-    margin-top: 0.5em;
-  }
-
-  .entry img {
-    height: auto;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
-    cursor: pointer;
-    border-radius: 10px;
-    transition: transform 0.2s ease;
-  }
-
-  .entry img:hover {
-    transform: scale(1.02);
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-
-  .section {
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-
-  .section > div {
-    float: left;
-    display: inline-block;
-    margin: 0px 18px 18px 0px;
-    padding: 2px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* Desktop and tablet */
-  @media (min-width: 768px) {
-    .entry {
-      width: 310px;
+    /* Base Styles */
+    * {
+      box-sizing: border-box;
     }
-
-    .entry img {
-      width: 100%;
-      max-width: 300px;
-    }
-
-    .intro p,li {
-      margin-top: 0px;
-    }
-  }
-
-  /* Small tablet to large phone */
-  @media (max-width: 767px) {
+    
     body {
+      font-family: 'Hoefler Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.4;
+      color: #333;
+      margin: 0;
       padding: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+    }
+    
+    img:hover {
+      transform: scale(1.02);
     }
     
     h1 {
       font-size: 2.8em;
+      font-family: 'Lato', sans-serif;
+      margin-bottom: 0;
     }
     
     h2 {
-      font-size: 2em;
+      font-size: 1.8em;
+      font-weight: 400;
+      font-family: 'Lato', sans-serif;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      clear: both;
+    }
+    
+    h4 {
+      font-size: 18px;
+      margin-top: 0.5em;
+      margin-bottom: 0.25em;
+    }
+    
+    p, li {
+      color: #575757;
+      margin-bottom: 1em;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    a:hover {
+      color: #004499;
+      text-decoration: underline;
+    }
+    
+    /* Intro Section */
+    .intro .subtitle {
+      margin: 30px 0 5px;
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+    }
+    
+    .intro-text p {
+      margin-bottom: 18px;
+    }
+    
+    /* Gallery Layout */
+    .gallery {
       margin-top: 2em;
     }
     
+    .section {
+      margin-bottom: 20px;
+      width: 100%;
+      clear: both;
+      overflow: auto;
+    }
+    
+    /* Entry Cards */
     .entry {
-      max-width: 100%;
-      width: 100%;
-      margin-bottom: 30px;
-      float: none;
-    }
-
-    .entry img {
-      width: 100%;
+      margin-bottom: 25px;
+      overflow: hidden;
     }
     
-    .section > div {
-      float: none;
-      width: 100%;
-      margin-right: 0;
-    }
-  }
-
-  /* Phone */
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 2.2em;
+    .entry .title {
+      margin-bottom: 2px;
+      color: black;
+      font-weight: bold;
     }
     
-    h2 {
-      font-size: 1.6em;
-    }
-    
-    p, li, .intro p, .intro li {
+    .entry .author {
+      margin: 0 0 1em 0;
       font-size: 16px;
-      line-height: 1.6;
+      color: #777;
     }
     
-    .entry h4 {
-      font-size: 18px;
+    /* Learn More Sections */
+    .learnmore {
+      margin-bottom: 20px;
     }
     
-    .intro .subtitle {
-      font-size: 16px;
+    .learnmore h5 {
+      margin-bottom: 2px;
+      margin-top: 10px;
+      color: #4a4a4a;
     }
     
-    body {
-      padding: 10px;
+    .learnmore p {
+      margin: 0;
+      font-size: 14px;
     }
-  }
-
-  .entry h4 {
-    font-size: 18px;
-  }
-
-  .entry .author {
-    margin: 0 0 1em 0;
-    font-size: 16px;
-    color: #777;
-  }
-
-  .learnmore h5 {
-    margin-bottom: 2px;
-    margin-top: 10px;
-    color: #4a4a4a;
-  }
-
-  .learnmore p {
-    margin: 0;
-    font-size: 14px;
-  }
-
-  .learnmore {
-    margin-bottom: 30px;
-  }
-
-  .sci {
-    line-height: 1.4;
-  }
-
-  .learnmore .sci {
-    margin-bottom: 10px;
-  }
-
-  a {
-    color: #0066cc;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  a:hover {
-    color: #004499;
-    text-decoration: underline;
-  }
-
-  /* Space between sections */
-  .section + .section {
-    margin-top: 20px;
-  }
-  
-  .intro-text p {
-    margin-bottom: 18px;
-  }
-
-  .intro-text {
-    max-width: 100%;
-  }
-</style>
-  <body>
+    
+    .sci {
+      line-height: 1.4;
+    }
+    
+    /* Responsive Layout */
+    /* Mobile first approach - all entries are full width by default */
+    
+    /* Tablet and Desktop */
+    @media (min-width: 768px) {
+      .entry {
+        float: left;
+        width: 310px;
+        margin-right: 20px;
+      }
+      
+      .entry img {
+        max-width: 300px;
+      }
+      
+      body {
+        padding: 5px;
+      }
+    }
+    
+    /* Larger screens */
+    @media (min-width: 992px) {
+      body {
+        font-size: 17px;
+      }
+      
+      h1 {
+        font-size: 3em;
+      }
+    }
+  </style>
+</head>
+<body>
   <div class="intro">
     <h1>Zan Armstrong</h1>
     <p class="subtitle">Visualizing Data for Analysis & Decision Making</p>
@@ -263,8 +186,7 @@
   </div>
 
   <div class="gallery">
-    <div  class="section">
-
+    <div class="section">
       <h2>Awards & Museum Exhibitions</h2>
 
       <div class="entry">
@@ -285,7 +207,6 @@
           <p><a href="https://www.visualcinnamon.com/2017/10/creating-baby-births-visual/">Nadieh's Story Behind the Viz</a></p>
           <p><a href="https://www.amycesal.com/day-doh-viz/when-are-babies-born">Recreated in Play Doh by Amy Cesal</a></p>
         </div>
-       
       </div>
 
       <div class="entry">
@@ -293,8 +214,7 @@
         <p class="title">Activation Atlas</p>
         <p class="author">Distill.pub</p>
         <a href="https://distill.pub/2019/activation-atlas/"><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/images/atlas.png"/></a>
-        <p>The Activation Atlas helps us see through the eyes of a model, not just how it responds to a specific input but to provide a map of what is "seeable" at each layer. This work was led by Shan Carter; I contributed to the interactives and 
-          .</p>
+        <p>The Activation Atlas helps us see through the eyes of a model, not just how it responds to a specific input but to provide a map of what is "seeable" at each layer. This work was led by Shan Carter; I contributed to the interactives and analysis.</p>
       
         <div class="learnmore">
           <h5>Links</h5>
@@ -310,17 +230,14 @@
         <a href="https://stamen.com/work/banfield/"><img src="https://raw.githubusercontent.com/zanarmstrong/portfolio/master/images/metaga.png"/></a>
         <p>Originally created for researchers at UC Berkeley to study the genetics of micro-ecosystems like the gut of an infant, the inside of a nuclear reactor, or between a dolphin's teeth, this visualization was also embraced by the art & design community.</p>
         <p>My favorite part were the bold colors. They met a scientific need: despite being close numerically, the values 0 and 1 were shown in black and bright colors, respectively, due to the scientific context that "none" and "at least 1" were conceptual opposites.</p>
-        <p></p>
         <div class="learnmore">
           <h5>Read more</h5>
           <p><a href="https://stamen.com/work/banfield/">Stamen Design Blog</a></p>
-          <p><a href="https://twitter.com/stamen/status/949422755438407680">SF Moma: Designed in Caliornia</a></p>
-          <p><a href="https://www.cooperhewitt.org/2018/11/15/cooper-hewitt-and-cube-design-museum-to-co-organize-2019-design-triennial/">2019 Design Triennial Annoucement</a></p>
+          <p><a href="https://twitter.com/stamen/status/949422755438407680">SF Moma: Designed in California</a></p>
+          <p><a href="https://www.cooperhewitt.org/2018/11/15/cooper-hewitt-and-cube-design-museum-to-co-organize-2019-design-triennial/">2019 Design Triennial Announcement</a></p>
         </div>
-        
       </div>
     </div>
-
 
     <div  class="section">
 
