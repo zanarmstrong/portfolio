@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zan Armstrong - Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <style>
     /* Base Styles */
     * {
@@ -14,10 +15,9 @@
     }
     
     body {
-      font-family: 'Hoefler Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       line-height: 1.4;
       color: #333;
-      margin: 0;
       padding: 15px;
       max-width: 1200px;
       margin: 0 auto;
@@ -39,7 +39,7 @@
     }
     
     h1 {
-      font-size: 2.8em;
+      font-size: 2em;
       font-family: 'Lato', sans-serif;
       margin-bottom: 0;
     }
@@ -80,15 +80,16 @@
     
     /* Intro Section */
     .intro .subtitle {
-      margin: 30px 0 5px;
-      font-size: 16px;
-      font-weight: bold;
-      color: black;
+      margin: 10px 0 24px;
+      font-size: 1.2em;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      color: #555;
     }
     
     .intro-text p {
       margin-bottom: 18px;
-      width: 100%;
+      max-width: 720px;
     }
     
     /* Gallery Layout */
@@ -159,6 +160,18 @@
       line-height: 1.2;
     }
     
+    /* Talks section */
+    .talk-section {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .talk-subsection {
+      flex: 0 0 100%;
+      margin-bottom: 30px;
+    }
+
     /* Responsive Layout */
     /* Mobile first approach - all entries are full width by default */
     
@@ -186,7 +199,11 @@
       .entry img {
         max-width: 350px;
       }
-      
+
+      h1 {
+        font-size: 2.5em;
+      }
+
       body {
         padding: 5px 10px;
       }
@@ -255,7 +272,7 @@
       <div class="entry">
         <h4>Make "the Important" Visible</h4>
         <p class="author">Nightingale Magazine</p>
-        <a href="https://drive.google.com/file/d/1lkzgUwGzJSU93OUTXT57BULSv2L5tBxJ/view?usp=sharing"><img src="images/makevisible.png"/></a>
+        <a href="https://drive.google.com/file/d/1lkzgUwGzJSU93OUTXT57BULSv2L5tBxJ/view?usp=sharing"><img src="images/makevisible.png" alt="Make the Important Visible article in Nightingale Magazine"/></a>
         <p>Published in the "Guidelines" issue of the Data Visualization's Nightingale Magazine, this article shows readers how to make more effective data visualizations by ensuring that "whatever is most important about their data" is actually made literally visible in some way. It's not as obvious as it seems, but when applied it is extremely powerful.</p>
         <div class="learnmore">
           <h5>Links</h5>
@@ -267,7 +284,7 @@
       <div class="entry">
         <h4>Everything is Seasonal</h4>
         <p class="author">OpenVisConf</p>
-        <a href="https://www.youtube.com/watch?v=IiF4-g001EQ"><img src="images/seasonal.png"/></a>
+        <a href="https://www.youtube.com/watch?v=IiF4-g001EQ"><img src="images/seasonal.png" alt="Everything is Seasonal talk at OpenVisConf"/></a>
         <p>In this talk you'll learn why your commute is worse in November than June, why so many babies are born around 8:30am, and why it's almost always a terrible idea to look at monthly data.</p>
         <div class="learnmore">
           <h5>Presentation</h5>
@@ -279,7 +296,7 @@
       <div class="entry">
         <h4>Stop Aggregating Away the Signal</h4>
         <p class="author">Stack Overflow's blog "The Overflow"</p>
-        <a href="https://stackoverflow.blog/2022/03/03/stop-aggregating-away-the-signal-in-your-data/"><img src="images/stopaggregatingheader.png"/></a>
+        <a href="https://stackoverflow.blog/2022/03/03/stop-aggregating-away-the-signal-in-your-data/"><img src="images/stopaggregatingheader.png" alt="Stop Aggregating Away the Signal article on Stack Overflow blog"/></a>
         <p>Published on Stack Overflow's blog, this article shows how "by aggregating our data in an effort to simplify it, we lose the signal and the context we need to make sense of what we’re seeing."</p>
         <div class="learnmore">
           <h5>Links</h5>
@@ -289,6 +306,8 @@
         </div>
       </div>
 
+    </div>
+
     <div class="section">
       <h2>Museums, awards, viz research, teaching, and a talk</h2>
 
@@ -296,7 +315,7 @@
         <h4>Information is Beautiful - Silver</h4>
         <p class="title">Why are So Many Babies Born Around 8am</p>
         <p class="author">Scientific American</p>
-        <a href="https://blogs.scientificamerican.com/sa-visual/why-are-so-many-babies-born-around-8-00-a-m/"><img src="images/babiesshort.png"/></a>
+        <a href="https://blogs.scientificamerican.com/sa-visual/why-are-so-many-babies-born-around-8-00-a-m/"><img src="images/babiesshort.png" alt="Why are So Many Babies Born Around 8am visualization in Scientific American"/></a>
         <p>It is common to aggregate data over time when striving for simplicity, but sometimes the story is revealed in the details: minutes, hours, days, and weeks.</p>
         <div class="learnmore">
           <h5>Publication</h5>
@@ -316,7 +335,7 @@
         <h4>Ars Electronica: Understanding AI</h4>
         <p class="title">Activation Atlas</p>
         <p class="author">Distill.pub</p>
-        <a href="https://distill.pub/2019/activation-atlas/"><img src="images/atlas.png"/></a>
+        <a href="https://distill.pub/2019/activation-atlas/"><img src="images/atlas.png" alt="Activation Atlas visualization showing AI model feature maps"/></a>
         <p>The Activation Atlas helps us see through the eyes of a model, not just how it responds to a specific input but to provide a map of what is "seeable" at each layer. This work was led by Shan Carter; I contributed to the interactives and analysis.</p>
       
         <div class="learnmore">
@@ -330,7 +349,7 @@
         <h4>SF Moma, Cooper Hewitt, Cube</h4>
         <p class="title">Metagenomics</p>
         <p class="author">with Stamen Design, for UC Berkeley</p>
-        <a href="https://stamen.com/work/banfield/"><img src="images/metaga.png"/></a>
+        <a href="https://stamen.com/work/banfield/"><img src="images/metaga.png" alt="Metagenomics visualization exhibited at SF MOMA and Cooper Hewitt"/></a>
         <p>Originally created for researchers at UC Berkeley to study the genetics of micro-ecosystems like the gut of an infant, the inside of a nuclear reactor, or between a dolphin's teeth, this visualization was also embraced by the art & design community.</p>
         <p>My favorite part were the bold colors. They met a scientific need: despite being close numerically, the values 0 and 1 were shown in black and bright colors, respectively, due to the scientific context that "none" and "at least 1" were conceptual opposites.</p>
         <div class="learnmore">
@@ -345,7 +364,7 @@
       <div class="entry">
         <h4>Research: Visualizing Mix</h4>
         <p class="author">IEEE InfoVis</p>
-        <a href="https://research.google/pubs/pub42901/"/><img src="images/comet.png"/></a>
+        <a href="https://research.google/pubs/pub42901/"><img src="images/comet.png" alt="Comet chart for visualizing Simpson's Paradox and mix effects"/></a>
         <p>Simpson's Paradox is an extreme version of a notoriously confusing effect in which aggregate numbers seem to contradict more detailed statistics. A "comet chart" is a special type of scatterplot to reveal "changes in mix". In addition to showing the metric of interest on the y-axis, it also shows the <em>size</em> of each subgroup on the x-axis. It's immediately obvious if comets are all "streaking together", going all different directions, or if there is some correlation between where the comets are spacially and how they are changing.</p>
         <div class="learnmore">
           <h5>Research Publication</h5>
@@ -367,7 +386,7 @@
       <div class="entry">
         <h4>Teaching "Design of Data"</h4>
         <p class="author">Stanford's d.school</p>
-        <a><img src="images/designofdata.jpg"/></a>
+        <img src="images/designofdata.jpg" alt="Design of Data course at Stanford d.school"/>
         <p>In collaboration with Catherine Madden and Irene Alisjahbana, I taught a 10 week course in Stanford's d.school in fall 2024. Our students included both undergraduate and graduate students.</p>
           <div class="learnmore">
           <h5>Links</h5>
@@ -379,15 +398,14 @@
       <div class="entry">
         <h4>Three Simple, Flexible "Tools"</h4>
         <p class="author">Outlier, Data Visualization Society</p>
-        <a href="https://www.youtube.com/watch?v=W02ZlvulHSY"><img src="images/outlier.png"/></a>
+        <a href="https://www.youtube.com/watch?v=W02ZlvulHSY"><img src="images/outlier.png" alt="Three Simple Flexible Tools talk at Outlier conference"/></a>
         <p>This talk introduces the three simple, flexible "tools" of data visualization: making color meaningful, using small multiples, and making order matter. Futhermore, it shows *why* these tools are so powerful to reveal information that might have been visible, but not noticeable or attention-grabbing. Most importantly, it demonstrates how practioners can use these principles to bring their own domain expertise or understanding of the question into their visualizations, and to make their implicit assumptions explicit.</p>
         <div class="learnmore">
           <h5>Links</h5>
           <p><a href="https://www.youtube.com/watch?v=W02ZlvulHSY">Presentation</a></p>
           <p><a href="https://observablehq.com/@observablehq/examples-three-simple-flexible-tools">Featured visualizations</a></p>
         </div>
-      </div>    
-    </div>
+      </div>
     </div>
 
     <div  class="section">
@@ -398,7 +416,7 @@
       <div class="entry">
         <h4>Searching for New Malaria Drugs</h4>
         <p class="author">Google Applied Science: Malaria</p>
-        <a href="https://advances.sciencemag.org/content/6/39/eaba9338.full"/><img src="images/malaria.jpg"/></a>
+        <a href="https://advances.sciencemag.org/content/6/39/eaba9338.full"><img src="images/malaria.jpg" alt="Malaria drug discovery data visualization"/></a>
         <p>Over the course of three years, I worked closely with scientists and ML experts as they built models to create new methods in the effort to find new anti-malarial drugs.</p>
         <p>In the scientific context, authorship is reserved for contributions to the scientific results. So, my inclusion as an contributing author indicates the critical role visualization played in this work.</p>
         
@@ -412,7 +430,7 @@
       <div class="entry">
         <h4>Analyzing Time Series</h4>
         <p class="author">Observable: illustrating techniques</p>
-        <a href="https://observablehq.com/@observablehq/analyzing-time-series-data"/><img src="images/facetsNotColor.png"/></a>
+        <a href="https://observablehq.com/@observablehq/analyzing-time-series-data"><img src="images/facetsNotColor.png" alt="Analyzing time series data with small multiples instead of color"/></a>
         <p>At Observable, I led this project to illustrate how we can literally change how we look at our data to more effectively analyze data heavily influenced by hour-of-day, day-of-week, and season-of-year patterns. This work was done in collaboration with Ian Johnson and Mike Freeman. Through a series of 6 "stories" we showcase techniques that can be applied to any dataset with values measured each hour or day.</p>
         <div class="learnmore">
           <h5>Publication</h5>
@@ -425,8 +443,8 @@
       <div class="entry">
         <h4>SARS-CoV-2 in Wastewater</h4>
         <p class="author">Stanford University</p>
-        <a href="https://observablehq.com/@zanarmstrong/sewer-coronavirus-alert-network"><img src="images/covid.png"/></a>
-        <a href="https://observablehq.com/@zanarmstrong/sewer-coronavirus-alert-network"><img src="images/drilldown.png"/></a>
+        <a href="https://observablehq.com/@zanarmstrong/sewer-coronavirus-alert-network"><img src="images/covid.png" alt="SARS-CoV-2 wastewater monitoring visualization"/></a>
+        <a href="https://observablehq.com/@zanarmstrong/sewer-coronavirus-alert-network"><img src="images/drilldown.png" alt="Wastewater COVID data drill-down chart"/></a>
         <p>When infected with a disease, we poop fragments of the viral RNA. Sampling wastewater and isolating/sequencing the extracted genes therefore provides unique insight into community-level transmission of infectious diseases, including Covid-19. Because "everybody contributes" their poop to the sewage system, tracking viral fragments in wastewater provides data that doesn't rely on individual people going to doctors to get official tests.</p>
         <p>This <a href="https://www.latimes.com/california/story/2022-03-21/sewage-surveillance-covid-infectious-diseases-future">LA Times article</a> demonstrates the impact that this data has already had on the decisions of public health officials and of doctors making decisions about which drugs they should use to treat patients based on which variant is predominant.<p>
         <div class="learnmore">
@@ -447,7 +465,7 @@
       <div class="entry">
         <h4>Changing How Scientists Create Viz</h4>
         <p class='author'>Google: Developing & Teaching Best Practices</p>
-        <a href="https://arxiv.org/abs/2002.08973"><img src="images/rapha.png"></a>
+        <a href="https://arxiv.org/abs/2002.08973"><img src="images/rapha.png" alt="Visualization best practices guide for scientists at Google"></a>
         <p>My work is not just about specific charts, but also about identifying new best practices and changing how researchers think about using viz more effectively in their own work.</p>
        
         <div class="learnmore">
@@ -463,7 +481,7 @@
       <div class="entry">
         <h4>Gene Expression in the Brain</h4>
         <p class="author">Yale University</p>
-        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/9421e4a7226a4c0b3188db3a2df0d7f1/index.html"/><img src="images/yale.png"/></a>
+        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/9421e4a7226a4c0b3188db3a2df0d7f1/index.html"><img src="images/yale.png" alt="Gene expression in the brain visualization for Yale University"/></a>
         <p>The design emphasized the importance of the two features that made this dataset special: quantitative accuracy and gene expression assayed by cell type.</p>
         <p>This visualization played a role in the analysis leading to <a href="https://pubmed.ncbi.nlm.nih.gov/29184206/">A multiregional proteomic survey of the postnatal human brain</a> published in Nature Neurosience</p>
         
@@ -476,7 +494,7 @@
       <div class="entry">
         <h4>Contributing to Top Tier Research</h4>
         <p class="author">Google Accelerated Science: Materials</p>
-        <a href="https://docs.google.com/presentation/d/1aJmsjx5wtL6m-ut_Kox_hQkQLycohrC4v3drQ9uBJvg/edit#slide=id.g42e5c5e85a_0_71"/><img src="images/jcap.png"></a>
+        <a href="https://docs.google.com/presentation/d/1aJmsjx5wtL6m-ut_Kox_hQkQLycohrC4v3drQ9uBJvg/edit#slide=id.g42e5c5e85a_0_71"><img src="images/jcap.png" alt="Materials science research visualization with 48 line charts"></a>
         <p>My first attempt was a beautiful, interactive 3D surface. Unfortunately, it was useless for analyzing the data. Instead, these 48 line charts show 10x more data and focussed attention on the most important attributes of the data. Most importantly, the tool informed key research decisions and led to discovering an unexpected scientific phenomenon.</p>
         <p>My contributions led to being an author in scientific research published in published in Proceedings of the National Academy of Sciences (PNAS), the world's second most cited scientific journal.</p>
 
@@ -493,7 +511,7 @@
       <div class="entry">
         <h4>Informing ML feature space</h4>
         <p class='author'>Google: Viz + ML</p>
-        <a href="https://www.biorxiv.org/content/10.1101/2021.08.06.453272v1"><img src="images/algae.png"></a>
+        <a href="https://www.biorxiv.org/content/10.1101/2021.08.06.453272v1"><img src="images/algae.png" alt="ML feature space visualization for algae cultivation optimization"></a>
         <p>A common problem in ML is understanding the interconnected relationships between 3 to 20 potential features in a dataset to identify what combinations of features most affect a "score" variable. My key data visualization insight was identifying that if we discretized the continuous score function into "bad, meh, good, better, and best" categories we could much more effectively use color and small multiples to scan the space of pairwise interactions. This was especially important in this study where the ML algorithms informed growing conditions for algae, so measuring the effectiveness of a particular set of parameters was costly and time-consuming because it required actually growing the algae in the lab.<p>
         <div class="learnmore">
           <h5>Research</h5>
@@ -505,7 +523,7 @@
       <div class="entry">
         <h4>Viz for Scientific Communication</h4>
         <p class="author">Google: Advising</p>
-        <a href="https://www.nature.com/articles/s41598-019-47148-x"><img src="images/bangbang.png"></a>
+        <a href="https://www.nature.com/articles/s41598-019-47148-x"><img src="images/bangbang.png" alt="Scientific communication visualization example"></a>
         <p>While my primary role on the Applied Sciences team was creating visualizations for analysis & discovery, I also advised researchers across the team on how to more effectively communicate their results.</p>
         <p>The "curse of knowledge" bias is especially challenging in transitioning from analysis to communication: once you know what's important about the data in the chart, it's hard to imagine that someone else looking at the same chart wouldn't see the same thing.</p>
         <div class="learnmore">
@@ -524,7 +542,7 @@
       <div class="entry">
         <h4>Covid Response</h4>
         <p class="author">Google: Data Viz Hub</p>
-        <a href=""/><img src="images/mobility.png"/></a>
+        <img src="images/mobility.png" alt="Google Community Mobility Reports visualization"/>
         <p>In March or 2020, I founded and led the Data Viz Hub: a group of Googlers with data viz skills lending their expertise to projects across Google related to Covid-19. For example, our group contributed to the Google Search and News teams' visualizations of <a href="https://news.google.com/covid19/map">covid statistics</a>.</p>
         <p>Additionally, <a href="https://roadtolarissa.com/">Adam Pearce</a> and I collaborated to create  <a href="https://support.google.com/covid19-mobility/answer/9825414?hl=en&ref_topic=9822927">visualizations</a> and <a href="https://support.google.com/covid19-mobility/checklist/9834261?hl=en&ref_topic=9822927">thought questions</a> to contextualize the data in the Google's Community Mobility Reports.
 
@@ -533,7 +551,7 @@
       <div class="entry">
         <h4>Statistics Textbook</h4>
         <p class="author">Published by Wiley</p>
-        <a href="https://www.wileyplus.com/math-and-statistics/lock-statistics-unlocking-the-power-of-data-2e-eprof13947"><img src="images/statsbook.png"/></a>
+        <a href="https://www.wileyplus.com/math-and-statistics/lock-statistics-unlocking-the-power-of-data-2e-eprof13947"><img src="images/statsbook.png" alt="Statistics: Unlocking the Power of Data textbook cover"/></a>
         <p>I developed practice exercises for the data visualization chapter of this college-level textbook: <a href="https://www.wileyplus.com/math-and-statistics/lock-statistics-unlocking-the-power-of-data-2e-eprof13947">Statistics: Unlocking the Power of Data</a>.</p>
       </div>
 
@@ -548,7 +566,7 @@
       <div class="entry">
         <h4>A Jittery Line</h4>
         <p class="author">Because it's delightful</p>
-        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/5fbc4b93f62227dedeb7/index.html"><img src="images/dancingline.gif"/></a>
+        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/5fbc4b93f62227dedeb7/index.html"><img src="images/dancingline.gif" alt="A jittery animated line drawing"/></a>
         <p>These jittering lines still make me smile, even long after I first explored animation as a student at the School for Poetic Computation.</p>
         
         <div class="learnmore">
@@ -562,7 +580,7 @@
       <div class="entry">
         <h4>Voronoi Diagrams Explorable</h4>
         <p class="author">Drawing with math!</p>
-        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/b1c051113be144570881/index.html"/><img src="images/voronoi.png"/></a>
+        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/b1c051113be144570881/index.html"><img src="images/voronoi.png" alt="Voronoi diagrams and Delaunay triangulation explorable"/></a>
         <p>Using voronoi polygons to capture click events in <a href="https://weatherlines.zanarmstrong.com/#city=SAN%20FRANCISCO&metric=cloudCover">Weather Lines</a> sparked my curiosity. The result was an "explorable" that reveals the relationship among points, the bisecting lines that form triangles, circles, and the resulting polygons.</p>
 
         <div class="learnmore">
@@ -577,7 +595,7 @@
       <div class="entry">
         <h4>Which is Bigger?</h4>
         <p class="author">Created because Africa is really big</p>
-        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/caa2da1ea1558cdc3357/index.html"/><img src="images/bigger.png"/></a>
+        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/caa2da1ea1558cdc3357/index.html"><img src="images/bigger.png" alt="Which is Bigger? map size comparison tool"/></a>
         <p>Everyone who's watched <a href="https://www.youtube.com/watch?v=vVX-PrBRtTY">West Wing</a> knows that Greenland is not as big as it seems in mercator projections. But, do you have a good intuition for the relative sizes of Saudi Arabia vs. Alaska or Europe vs. Antarctica?
 
         <div class="learnmore">
@@ -594,7 +612,7 @@
       <div class="entry">
         <h4>Perceptual Uniformity vs. Distance</h4>
         <p class="author">What is the trade-off?</p>
-        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/7199ed8f71560888eb0cec6f593c5491/index.html"/><img src="images/perceptualdistance.png"/></a>
+        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/7199ed8f71560888eb0cec6f593c5491/index.html"><img src="images/perceptualdistance.png" alt="Perceptual uniformity vs distance colormap comparison charts"/></a>
         <p>This set of charts explores the relationship between perceptual uniformity and perceptual distance for 11 common colormaps, and it illustrates an alternative way to achieve uniformity by "straightening" the colormap.</p>
         <p></p>
         <div class="learnmore">
@@ -606,7 +624,7 @@
       <div class="entry">
         <h4>D3 Number Format "Tiny Tool"</h4>
         <p class="author">My 15 minutes of fame</p>
-        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/05c1e95bf7aa16c4768e/index.html"/><img src="images/formatter.png"/></a>
+        <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/05c1e95bf7aa16c4768e/index.html"><img src="images/formatter.png" alt="D3 number format tiny tool"/></a>
         <p>Long ago I shared two rainbow colored "tiny tools" that I'd created to make it easier to choose formatting strings, and they ended up being <a href="https://twitter.com/mf_viz/status/725126385354870785">surprisingly helpful</a> to many people.</p>
         <div class="learnmore">
           <h5>Tiny Tools</h5>
@@ -619,21 +637,21 @@
       <div class="entry">
         <h4>Weather Circles (and Lines)</h4>
         <p class="author">Mark Twain was wrong.</p>
-        <a href="https://weather.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover&colored=1"/><img src="images/weathercircles.png"/></a>
-        <a href="https://weatherlines.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover"/><img src="images/weatherlines.png"/></a>
+        <a href="https://weather.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover&colored=1"><img src="images/weathercircles.png" alt="Weather Circles: hourly weather patterns by city and month"/></a>
+        <a href="https://weatherlines.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover"><img src="images/weatherlines.png" alt="Weather Lines: temperature patterns across cities"/></a>
         <p>I lost a bet. It is colder in January than June in San Francisco, every single hour of the day.</p>
 
         <div class="learnmore">
           <h5>See it Live</h5>
-          <p><a href="https://weather.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover&colored=1"/>Weather Circles</a></p>
-          <p><a href="https://weatherlines.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover"/>Weather Lines</a></p>
+          <p><a href="https://weather.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover&colored=1">Weather Circles</a></p>
+          <p><a href="https://weatherlines.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover">Weather Lines</a></p>
         </div>
       </div>
 
       <div class="entry">
         <h4>High Contrast Cards for Babies</h4>
         <p class="author">Training neural nets for edge detection</p>
-        <img src="images/forbabies.jpg"/>
+        <img src="images/forbabies.jpg" alt="High contrast visual cards designed for infant development"/>
         <p>Young babies love looking at high contrast cards, and the designs make viz-loving new parents smile. </p><p>PS - for V2, would like to print on sturdier materials. Contact me if you know how to order custom prints on materials a baby can put in their mouth.</p>
       </div>
 
@@ -643,8 +661,8 @@
 
       <h2>Talks, Teaching, and more</h2>
       
-      <div class="talk-section" style="width: 100%; display: flex; flex-wrap: wrap;">
-        <div style="flex: 0 0 100%; margin-bottom: 30px;">
+      <div class="talk-section">
+        <div class="talk-subsection">
           <h4>Guest Speaker</h4>
           <div class="learnmore">
             <p class="sci">Invited speaker for Rice University's 2025 Visual Communication Symposium</p>
@@ -663,7 +681,7 @@
           </div>
         </div>
 
-        <div style="flex: 0 0 100%; margin-bottom: 30px;">
+        <div class="talk-subsection">
           <h4>Teaching and Workshops</h4>
           <div class="learnmore">
             <p class="sci">Stanford's d.school: taught 10-week "Design of Data" course</p>
@@ -675,7 +693,7 @@
           </div>
         </div>
    
-        <div style="flex: 0 0 100%; margin-bottom: 30px;">
+        <div class="talk-subsection">
           <h4>Interviews</h4>
           <div class="learnmore">
             <p class="sci">Stamen Practitioners Series: <a href="https://hi.stamen.com/stamen-exit-interview-zan-armstrong-d44d06e89d6d#.n1p30j1uy">A Conversation with Zan Armstrong</a></p>
@@ -685,7 +703,7 @@
           </div>
         </div>
 
-        <div style="flex: 0 0 100%; margin-bottom: 30px;">
+        <div class="talk-subsection">
           <h4>Writing</h4>
           <div class="learnmore">
             <p class="sci"><a href="https://hi.stamen.com/the-shapes-of-emotions-72c3851143e2#.az2xyp29x">The Shapes of Emotions</a></p>
