@@ -66,6 +66,8 @@
       margin-bottom: 0.3em;
       clear: both;
       width: 100%;
+      border-left: 4px solid #e07340;
+      padding-left: 0.5em;
     }
     
     h4 {
@@ -136,6 +138,13 @@
       margin: 0 0 1em 0;
       font-size: 16px;
       color: #777;
+    }
+
+    .entry .credit {
+      margin: 0.25em 0 1em 0;
+      font-size: 13px;
+      color: #999;
+      font-style: italic;
     }
     
     /* Learn More Sections */
@@ -279,6 +288,20 @@
      <h2>How I think about making data visible (and useful)</h2>
      <p>These articles/talks show how I approach creating charts and how I think about data. If you like these, you'll like working with me.</p>
 
+
+     <div class="entry">
+      <h4>Stop Aggregating Away the Signal</h4>
+      <p class="author">Stack Overflow's blog "The Overflow"</p>
+      <a href="https://stackoverflow.blog/2022/03/03/stop-aggregating-away-the-signal-in-your-data/"><img src="images/stopaggregatingheader.png" alt="Stop Aggregating Away the Signal article on Stack Overflow blog"/></a>
+      <p>Published on Stack Overflow's blog, this article shows how "by aggregating our data in an effort to simplify it, we lose the signal and the context we need to make sense of what we’re seeing."</p>
+      <div class="learnmore">
+        <h5>Links</h5>
+        <p><a href="https://stackoverflow.blog/2022/03/03/stop-aggregating-away-the-signal-in-your-data/">Blog Post</a></p>
+        <p><a href="https://observablehq.com/@observablehq/analyzing-time-series-data">Analyzing Time Series Data visualizations</a></p>
+        <p><a href="https://dataviztoday.com/shownotes/73">Featured on Data Viz Today podcast</a></p>
+      </div>
+    </div>
+
       <div class="entry">
         <h4>Make "the Important" Visible</h4>
         <p class="author">Nightingale Magazine</p>
@@ -292,8 +315,26 @@
       </div>     
       
       <div class="entry">
-        <h4>Everything is Seasonal</h4>
-        <p class="author">OpenVisConf</p>
+        <h4>Beyond Explore & Explain</h4>
+        <p class="author">Outlier Conference 2025</p>
+        <a href="https://www.youtube.com/watch?v=rOj6_NiFAOQ"><img src="images/beyondexploreexplain.png" alt="Beyond Explore and Explain: Diagnostic Charts and the Question Dimension"/></a>
+        <p>This talk expands the classic explore/explain paradigm of data viz by adding "diagnostic charts", the charts you use again and again each time you have new data come in. Discover how focusing on the questions you need answered can make your data visualizations more effective and impactful.</p>
+        <div class="learnmore">
+          <h5>Presentation</h5>
+          <p><a href="https://www.youtube.com/watch?v=rOj6_NiFAOQ">Video</a></p>
+          <p><a href="https://www.figma.com/deck/A4J10RYl6wrzDwBWpRgzz9/Outlier--beyond-explore-explain">Slides</a></p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="section">
+      <h2>Selected work</h2>
+
+      <div class="entry">
+        <h4>OpenVisConf</h4>
+        <p class="author">Everything is Seasonal</p>
         <a href="https://www.youtube.com/watch?v=IiF4-g001EQ"><img src="images/seasonal.png" alt="Everything is Seasonal talk at OpenVisConf"/></a>
         <p>In this talk you'll learn why your commute is worse in November than June, why so many babies are born around 8:30am, and why it's almost always a terrible idea to look at monthly data.</p>
         <div class="learnmore">
@@ -304,25 +345,7 @@
       </div>
 
       <div class="entry">
-        <h4>Stop Aggregating Away the Signal</h4>
-        <p class="author">Stack Overflow's blog "The Overflow"</p>
-        <a href="https://stackoverflow.blog/2022/03/03/stop-aggregating-away-the-signal-in-your-data/"><img src="images/stopaggregatingheader.png" alt="Stop Aggregating Away the Signal article on Stack Overflow blog"/></a>
-        <p>Published on Stack Overflow's blog, this article shows how "by aggregating our data in an effort to simplify it, we lose the signal and the context we need to make sense of what we’re seeing."</p>
-        <div class="learnmore">
-          <h5>Links</h5>
-          <p><a href="https://stackoverflow.blog/2022/03/03/stop-aggregating-away-the-signal-in-your-data/">Blog Post</a></p>
-          <p><a href="https://observablehq.com/@observablehq/analyzing-time-series-data">Analyzing Time Series Data visualizations</a></p>
-          <p><a href="https://dataviztoday.com/shownotes/73">Featured on Data Viz Today podcast</a></p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="section">
-      <h2>Museums, awards, viz research, teaching, and a talk</h2>
-
-      <div class="entry">
-        <h4>Information is Beautiful - Silver</h4>
+        <h4>Information is Beautiful - Silver Award</h4>
         <p class="title">Why are So Many Babies Born Around 8am</p>
         <p class="author">Scientific American</p>
         <a href="https://blogs.scientificamerican.com/sa-visual/why-are-so-many-babies-born-around-8-00-a-m/"><img src="images/babiesshort.png" alt="Why are So Many Babies Born Around 8am visualization in Scientific American"/></a>
@@ -342,11 +365,11 @@
       </div>
 
       <div class="entry">
-        <h4>Ars Electronica: Understanding AI</h4>
-        <p class="title">Activation Atlas</p>
-        <p class="author">Distill.pub</p>
+        <h4>Distill.pub</h4>
+        <p class="author">Activation Atlas</p>
         <a href="https://distill.pub/2019/activation-atlas/"><img src="images/atlas.png" alt="Activation Atlas visualization showing AI model feature maps"/></a>
         <p>The Activation Atlas helps us see through the eyes of a model, not just how it responds to a specific input but to provide a map of what is "seeable" at each layer. This work was led by Shan Carter; I contributed to the interactives and analysis.</p>
+        <p>Published on AI research's Distill.pub, and exhibited in Ars Electronica's Understanding AI exhibit.</p>
       
         <div class="learnmore">
           <h5>Links</h5>
@@ -372,8 +395,8 @@
 
       
       <div class="entry">
-        <h4>Research: Visualizing Mix</h4>
-        <p class="author">IEEE InfoVis</p>
+        <h4>IEEE InfoVis</h4>
+        <p class="author">Research: Visualizing Mix</p>
         <a href="https://research.google/pubs/pub42901/"><img src="images/comet.png" alt="Comet chart for visualizing Simpson's Paradox and mix effects"/></a>
         <p>Simpson's Paradox is an extreme version of a notoriously confusing effect in which aggregate numbers seem to contradict more detailed statistics. A "comet chart" is a special type of scatterplot to reveal "changes in mix". In addition to showing the metric of interest on the y-axis, it also shows the <em>size</em> of each subgroup on the x-axis. It's immediately obvious if comets are all "streaking together", going all different directions, or if there is some correlation between where the comets are spacially and how they are changing.</p>
         <div class="learnmore">
@@ -394,9 +417,10 @@
 
 
       <div class="entry">
-        <h4>Teaching "Design of Data"</h4>
-        <p class="author">Stanford's d.school</p>
+        <h4>Stanford's d.school</h4>
+        <p class="author">Taught "Design of Data"</p>
         <img src="images/designofdata.jpg" alt="Design of Data course at Stanford d.school"/>
+        <p class="credit">Created by student Sarah Ann Li-Shen Teaw</p>
         <p>In collaboration with Catherine Madden and Irene Alisjahbana, I taught a 10 week course in Stanford's d.school in fall 2024. Our students included both undergraduate and graduate students.</p>
           <div class="learnmore">
           <h5>Links</h5>
@@ -406,8 +430,8 @@
       </div>    
 
       <div class="entry">
-        <h4>Three Simple, Flexible "Tools"</h4>
-        <p class="author">Outlier, Data Visualization Society</p>
+        <h4>Outlier, Data Visualization Society</h4>
+        <p class="author">Three Simple, Flexible "Tools"</p>
         <a href="https://www.youtube.com/watch?v=W02ZlvulHSY"><img src="images/outlier.png" alt="Three Simple Flexible Tools talk at Outlier conference"/></a>
         <p>This talk introduces the three simple, flexible "tools" of data visualization: making color meaningful, using small multiples, and making order matter. Futhermore, it shows *why* these tools are so powerful to reveal information that might have been visible, but not noticeable or attention-grabbing. Most importantly, it demonstrates how practioners can use these principles to bring their own domain expertise or understanding of the question into their visualizations, and to make their implicit assumptions explicit.</p>
         <div class="learnmore">
@@ -451,13 +475,14 @@
 
 
       <div class="entry">
-        <h4>SARS-CoV-2 in Wastewater</h4>
+        <h4>SCAN wastewater to track disease</h4>
         <p class="author">Stanford University</p>
         <a href="https://observablehq.com/@zanarmstrong/sewer-coronavirus-alert-network"><img src="images/covid.png" alt="SARS-CoV-2 wastewater monitoring visualization"/></a>
         <a href="https://observablehq.com/@zanarmstrong/sewer-coronavirus-alert-network"><img src="images/drilldown.png" alt="Wastewater COVID data drill-down chart"/></a>
-        <p>When infected with a disease, we poop fragments of the viral RNA. Sampling wastewater and isolating/sequencing the extracted genes therefore provides unique insight into community-level transmission of infectious diseases, including Covid-19. Because "everybody contributes" their poop to the sewage system, tracking viral fragments in wastewater provides data that doesn't rely on individual people going to doctors to get official tests.</p>
+        <p>When infected with a disease, we poop fragments of the viral RNA. Sampling sewage and isolating/sequencing the extracted genes therefore provides unique insight into community-level transmission of infectious diseases, including Covid-19. Because "everybody contributes" their poop to the sewage system, tracking viral fragments in wastewater provides data that doesn't rely on individual people going to doctors to get official tests.</p>
         <p>This <a href="https://www.latimes.com/california/story/2022-03-21/sewage-surveillance-covid-infectious-diseases-future">LA Times article</a> demonstrates the impact that this data has already had on the decisions of public health officials and of doctors making decisions about which drugs they should use to treat patients based on which variant is predominant.<p>
-        <div class="learnmore">
+       <!--
+          <div class="learnmore">
           <h5>Visualizations</h5>
           <p><a href="https://covid19.sccgov.org/dashboard-wastewater">Santa Clara county's website</a><p>
           <p><a href="https://observablehq.com/@zanarmstrong/sewer-coronavirus-alert-network">Charts for all locations</a></p>
@@ -469,6 +494,7 @@
           <p><a href="https://www.latimes.com/california/story/2022-03-21/sewage-surveillance-covid-infectious-diseases-future">LA Times</a></p>
           <p><a href="https://sanjosespotlight.com/researchers-turn-to-human-waste-to-sniff-out-clues-about-covid-19-in-santa-clara-county/">San Jose Spotlight</a></p>
         </div>
+        -->
       </div>
 
 
@@ -558,13 +584,15 @@
 
       </div>
 
+      <!--
       <div class="entry">
         <h4>Statistics Textbook</h4>
         <p class="author">Published by Wiley</p>
         <a href="https://www.wileyplus.com/math-and-statistics/lock-statistics-unlocking-the-power-of-data-2e-eprof13947"><img src="images/statsbook.png" alt="Statistics: Unlocking the Power of Data textbook cover"/></a>
         <p>I developed practice exercises for the data visualization chapter of this college-level textbook: <a href="https://www.wileyplus.com/math-and-statistics/lock-statistics-unlocking-the-power-of-data-2e-eprof13947">Statistics: Unlocking the Power of Data</a>.</p>
       </div>
-
+      -->
+      
 
     </div>
 
@@ -573,6 +601,7 @@
 
       <h2>For Fun & Curiosity</h2>
 
+      <!--
       <div class="entry">
         <h4>A Jittery Line</h4>
         <p class="author">Because it's delightful</p>
@@ -585,8 +614,9 @@
         </div>
 
       </div>
+      -->
 
-
+      <!--
       <div class="entry">
         <h4>Voronoi Diagrams Explorable</h4>
         <p class="author">Drawing with math!</p>
@@ -599,9 +629,21 @@
         </div>
         
       </div>
+      -->
 
+      <div class="entry">
+        <h4>Weather Circles (and Lines)</h4>
+        <p class="author">Mark Twain was wrong.</p>
+        <a href="https://weather.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover&colored=1"><img src="images/weathercircles.png" alt="Weather Circles: hourly weather patterns by city and month"/></a>
+        <p>I lost a bet. It is colder in January than June in San Francisco, every single hour of the day.</p>
 
-      
+        <div class="learnmore">
+          <h5>See it Live</h5>
+          <p><a href="https://weather.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover&colored=1">Weather Circles</a></p>
+          <p><a href="https://weatherlines.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover">Weather Lines</a></p>
+        </div>
+      </div>
+
       <div class="entry">
         <h4>Which is Bigger?</h4>
         <p class="author">Created because Africa is really big</p>
@@ -644,19 +686,6 @@
 
       </div>
 
-      <div class="entry">
-        <h4>Weather Circles (and Lines)</h4>
-        <p class="author">Mark Twain was wrong.</p>
-        <a href="https://weather.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover&colored=1"><img src="images/weathercircles.png" alt="Weather Circles: hourly weather patterns by city and month"/></a>
-        <a href="https://weatherlines.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover"><img src="images/weatherlines.png" alt="Weather Lines: temperature patterns across cities"/></a>
-        <p>I lost a bet. It is colder in January than June in San Francisco, every single hour of the day.</p>
-
-        <div class="learnmore">
-          <h5>See it Live</h5>
-          <p><a href="https://weather.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover&colored=1">Weather Circles</a></p>
-          <p><a href="https://weatherlines.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover">Weather Lines</a></p>
-        </div>
-      </div>
 
       <div class="entry">
         <h4>High Contrast Cards for Babies</h4>
