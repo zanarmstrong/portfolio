@@ -102,7 +102,76 @@
       letter-spacing: 0.05em;
       color: #555;
     }
-    
+
+    /* Full-width banner */
+    .banner-photo {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #111;
+      padding: 20px 0 0;
+      margin-top: -15px;
+      margin-bottom: 36px;
+      box-sizing: border-box;
+    }
+
+    .banner-inner {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+
+    @media (min-width: 768px) {
+      .banner-photo {
+        padding-top: 40px;
+        margin-top: -5px;
+      }
+
+      .banner-inner {
+        padding: 0 10px;
+      }
+    }
+
+    .banner-photo img {
+      display: block;
+      margin: 0;
+      border-radius: 0;
+      box-shadow: none;
+      height: auto;
+    }
+
+    .banner-photo img:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    .banner-question-img {
+      width: 90%;
+      max-width: 780px;
+    }
+
+
+    .banner-photo .banner-drawing-img {
+      width: 55%;
+      max-width: 460px;
+      min-width: 260px;
+      margin-top: -40px;
+      margin-left: auto;
+    }
+
+    @media (min-width: 768px) {
+      .banner-question-img {
+        width: 95%;
+        max-width: 1000px;
+      }
+    }
+
     .intro-text p {
       margin-bottom: 18px;
       max-width: 720px;
@@ -230,6 +299,10 @@
       body {
         padding: 5px 10px;
       }
+
+      .banner-photo {
+        margin-top: -5px;
+      }
     }
     
     /* Larger screens */
@@ -266,13 +339,21 @@
       line-height: 1.2;
       margin-bottom: 10px;
     }
+
   </style>
 </head>
 <body>
+  <div class="banner-photo">
+    <div class="banner-inner">
+      <img class="banner-question-img" src="images/part1and2.svg" alt="How do we make whatever is most important about the data visible and noticeable? Even when we don't yet know what we'll discover."/>
+      <img class="banner-drawing-img" src="images/part3drawing.svg" alt="Hand-drawn illustration"/>
+    </div>
+  </div>
+
   <div class="intro">
     <h1>Zan Armstrong</h1>
     <p class="subtitle">Visualizing Data for Analysis & Decision Making</p>
-    
+
     <div class="intro-text">
       <p>I create charts and graphs which change how people look at their data (literally). My focus on data viz for analysis leads to better decision making, data driven questions, deeper understanding, and new discoveries.</p>
 
@@ -398,7 +479,7 @@
         <h4>IEEE InfoVis</h4>
         <p class="author">Research: Visualizing Mix</p>
         <a href="https://research.google/pubs/pub42901/"><img src="images/comet.png" alt="Comet chart for visualizing Simpson's Paradox and mix effects"/></a>
-        <p>Simpson's Paradox is an extreme version of a notoriously confusing effect in which aggregate numbers seem to contradict more detailed statistics. A "comet chart" is a special type of scatterplot to reveal "changes in mix". In addition to showing the metric of interest on the y-axis, it also shows the <em>size</em> of each subgroup on the x-axis. It's immediately obvious if comets are all "streaking together", going all different directions, or if there is some correlation between where the comets are spacially and how they are changing.</p>
+        <p>Simpson's Paradox is an extreme version of a notoriously confusing effect in which aggregate numbers seem to contradict more detailed statistics. A "comet chart" is a special type of scatterplot to reveal "changes in mix". In addition to showing the metric of interest on the y-axis, it also shows the <em>size</em> of each subgroup on the x-axis. It's immediately obvious if comets are all "streaking together", going all different directions, or if there is some correlation between where the comets are spatially and how they are changing.</p>
         <div class="learnmore">
           <h5>Research Publication</h5>
           <p><a href="https://research.google/pubs/pub42901/">Visualizing Mix Effects and Simpson's Paradox</a>, in collaboration with Martin Wattenberg</p>
@@ -433,7 +514,7 @@
         <h4>Outlier, Data Visualization Society</h4>
         <p class="author">Three Simple, Flexible "Tools"</p>
         <a href="https://www.youtube.com/watch?v=W02ZlvulHSY"><img src="images/outlier.png" alt="Three Simple Flexible Tools talk at Outlier conference"/></a>
-        <p>This talk introduces the three simple, flexible "tools" of data visualization: making color meaningful, using small multiples, and making order matter. Futhermore, it shows *why* these tools are so powerful to reveal information that might have been visible, but not noticeable or attention-grabbing. Most importantly, it demonstrates how practioners can use these principles to bring their own domain expertise or understanding of the question into their visualizations, and to make their implicit assumptions explicit.</p>
+        <p>This talk introduces the three simple, flexible "tools" of data visualization: making color meaningful, using small multiples, and making order matter. Furthermore, it shows *why* these tools are so powerful to reveal information that might have been visible, but not noticeable or attention-grabbing. Most importantly, it demonstrates how practioners can use these principles to bring their own domain expertise or understanding of the question into their visualizations, and to make their implicit assumptions explicit.</p>
         <div class="learnmore">
           <h5>Links</h5>
           <p><a href="https://www.youtube.com/watch?v=W02ZlvulHSY">Presentation</a></p>
@@ -445,7 +526,7 @@
     <div  class="section">
 
       <h2>Data Visualization for Science, Analysis, & Decision Making</h2>
-      <p>While some data visualization specialists are focussed on effective communication and storytelling with data, much of my work is aimed at helping domain experts better use data to inform decisions or make new discoveries. For example, as a member of the <a href="https://research.google/teams/applied-science/">Google Applied Science</a> team I contributed to research on <a href="https://ai.googleblog.com/2020/06/unlocking-chemome-with-dna-encoded.html">drug discovery</a>, materials science, <a href="https://journals.sagepub.com/doi/pdf/10.1177/2472555219857715">automating insight from biological images</a>, <a href="https://ai.googleblog.com/2017/07/so-there-i-was-firing-megawatt-plasma.html">fusion</a>, impoving scientific computing with machine learning, and more. While I sometimes consulted on scientific communication, my focus was not about communicating results. Rather, it was about working with the scientists during the discovery and analysis process: advising, prototyping, performing viz-based analysis, and building analysis tools. Success was defined as visualizations changing the scientific decisions (which model is chosen, what experiment to perform, how to change experimental conditions, etc.), directly leading to a discovery, or using scientific data to inform a "real-world" decision.</p>
+      <p>While some data visualization specialists are focused on effective communication and storytelling with data, much of my work is aimed at helping domain experts better use data to inform decisions or make new discoveries. For example, as a member of the <a href="https://research.google/teams/applied-science/">Google Applied Science</a> team I contributed to research on <a href="https://ai.googleblog.com/2020/06/unlocking-chemome-with-dna-encoded.html">drug discovery</a>, materials science, <a href="https://journals.sagepub.com/doi/pdf/10.1177/2472555219857715">automating insight from biological images</a>, <a href="https://ai.googleblog.com/2017/07/so-there-i-was-firing-megawatt-plasma.html">fusion</a>, improving scientific computing with machine learning, and more. While I sometimes consulted on scientific communication, my focus was not about communicating results. Rather, it was about working with the scientists during the discovery and analysis process: advising, prototyping, performing viz-based analysis, and building analysis tools. Success was defined as visualizations changing the scientific decisions (which model is chosen, what experiment to perform, how to change experimental conditions, etc.), directly leading to a discovery, or using scientific data to inform a "real-world" decision.</p>
       
       <div class="entry">
         <h4>Searching for New Malaria Drugs</h4>
@@ -477,8 +558,7 @@
       <div class="entry">
         <h4>SCAN wastewater to track disease</h4>
         <p class="author">Stanford University</p>
-        <a href="https://observablehq.com/@zanarmstrong/sewer-coronavirus-alert-network"><img src="images/covid.png" alt="SARS-CoV-2 wastewater monitoring visualization"/></a>
-        <a href="https://observablehq.com/@zanarmstrong/sewer-coronavirus-alert-network"><img src="images/drilldown.png" alt="Wastewater COVID data drill-down chart"/></a>
+        <a><img src="images/covid.png" alt="SARS-CoV-2 wastewater monitoring visualization"/></a>
         <p>When infected with a disease, we poop fragments of the viral RNA. Sampling sewage and isolating/sequencing the extracted genes therefore provides unique insight into community-level transmission of infectious diseases, including Covid-19. Because "everybody contributes" their poop to the sewage system, tracking viral fragments in wastewater provides data that doesn't rely on individual people going to doctors to get official tests.</p>
         <p>This <a href="https://www.latimes.com/california/story/2022-03-21/sewage-surveillance-covid-infectious-diseases-future">LA Times article</a> demonstrates the impact that this data has already had on the decisions of public health officials and of doctors making decisions about which drugs they should use to treat patients based on which variant is predominant.<p>
        <!--
@@ -519,7 +599,7 @@
         <p class="author">Yale University</p>
         <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/9421e4a7226a4c0b3188db3a2df0d7f1/index.html"><img src="images/yale.png" alt="Gene expression in the brain visualization for Yale University"/></a>
         <p>The design emphasized the importance of the two features that made this dataset special: quantitative accuracy and gene expression assayed by cell type.</p>
-        <p>This visualization played a role in the analysis leading to <a href="https://pubmed.ncbi.nlm.nih.gov/29184206/">A multiregional proteomic survey of the postnatal human brain</a> published in Nature Neurosience</p>
+        <p>This visualization played a role in the analysis leading to <a href="https://pubmed.ncbi.nlm.nih.gov/29184206/">A multiregional proteomic survey of the postnatal human brain</a> published in Nature Neuroscience</p>
         
         <div class="learnmore">
           <h5>Link</h5>
@@ -531,8 +611,8 @@
         <h4>Contributing to Top Tier Research</h4>
         <p class="author">Google Accelerated Science: Materials</p>
         <a href="https://docs.google.com/presentation/d/1aJmsjx5wtL6m-ut_Kox_hQkQLycohrC4v3drQ9uBJvg/edit#slide=id.g42e5c5e85a_0_71"><img src="images/jcap.png" alt="Materials science research visualization with 48 line charts"></a>
-        <p>My first attempt was a beautiful, interactive 3D surface. Unfortunately, it was useless for analyzing the data. Instead, these 48 line charts show 10x more data and focussed attention on the most important attributes of the data. Most importantly, the tool informed key research decisions and led to discovering an unexpected scientific phenomenon.</p>
-        <p>My contributions led to being an author in scientific research published in published in Proceedings of the National Academy of Sciences (PNAS), the world's second most cited scientific journal.</p>
+        <p>My first attempt was a beautiful, interactive 3D surface. Unfortunately, it was useless for analyzing the data. Instead, these 48 line charts show 10x more data and focused attention on the most important attributes of the data. Most importantly, the tool informed key research decisions and led to discovering an unexpected scientific phenomenon.</p>
+        <p>My contributions led to being an author in scientific research published in Proceedings of the National Academy of Sciences (PNAS), the world's second most cited scientific journal.</p>
 
         <div class="learnmore">
           <h5>Published Research</h5>
@@ -635,7 +715,7 @@
         <h4>Weather Circles (and Lines)</h4>
         <p class="author">Mark Twain was wrong.</p>
         <a href="https://weather.zanarmstrong.com/#city=LOS%20ANGELES&metric=cloudCover&colored=1"><img src="images/weathercircles.png" alt="Weather Circles: hourly weather patterns by city and month"/></a>
-        <p>I lost a bet. It is colder in January than June in San Francisco, every single hour of the day.</p>
+        <p>I lost a bet, but made a fun viz. It is colder in January than June in San Francisco, every single hour of the day.</p>
 
         <div class="learnmore">
           <h5>See it Live</h5>
@@ -648,7 +728,7 @@
         <h4>Which is Bigger?</h4>
         <p class="author">Created because Africa is really big</p>
         <a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/caa2da1ea1558cdc3357/index.html"><img src="images/bigger.png" alt="Which is Bigger? map size comparison tool"/></a>
-        <p>Everyone who's watched <a href="https://www.youtube.com/watch?v=vVX-PrBRtTY">West Wing</a> knows that Greenland is not as big as it seems in mercator projections. But, do you have a good intuition for the relative sizes of Saudi Arabia vs. Alaska or Europe vs. Antarctica?
+        <p>Everyone who's watched <a href="https://www.youtube.com/watch?v=vVX-PrBRtTY">West Wing</a> knows that Greenland is not as big as it seems in mercator projections. But, do you have a good intuition for the relative sizes of Saudi Arabia vs. Alaska or Europe vs. Antarctica?</p>
 
         <div class="learnmore">
           <h5>See it Live</h5>
@@ -660,7 +740,7 @@
 
       </div>
 
-
+      <!--
       <div class="entry">
         <h4>Perceptual Uniformity vs. Distance</h4>
         <p class="author">What is the trade-off?</p>
@@ -672,7 +752,9 @@
           <p><a href="https://blocks.roadtolarissa.com/zanarmstrong/raw/7199ed8f71560888eb0cec6f593c5491/index.html">Perceptual Distance Charts</a></p>
         </div>
       </div>
+    -->
 
+    <!--
       <div class="entry">
         <h4>D3 Number Format "Tiny Tool"</h4>
         <p class="author">My 15 minutes of fame</p>
@@ -685,13 +767,13 @@
         </div>
 
       </div>
-
+-->
 
       <div class="entry">
         <h4>High Contrast Cards for Babies</h4>
-        <p class="author">Training neural nets for edge detection</p>
+        <p class="author">Training (human) neural networks for edge detection</p>
         <img src="images/forbabies.jpg" alt="High contrast visual cards designed for infant development"/>
-        <p>Young babies love looking at high contrast cards, and the designs make viz-loving new parents smile. </p><p>PS - for V2, would like to print on sturdier materials. Contact me if you know how to order custom prints on materials a baby can put in their mouth.</p>
+        <p>Young babies love looking at high contrast cards, and the designs make viz-loving new parents smile. </p>
       </div>
 
     </div>
@@ -724,7 +806,7 @@
           <h4>Teaching and Workshops</h4>
           <div class="learnmore">
             <p class="sci">Stanford's d.school: taught 10-week "Design of Data" course</p>
-            <p class="sci">Pro bono consulting for ACLU</a>.</p>
+            <p class="sci">Pro bono consulting for ACLU.</p>
             <p class="sci"><a href="https://slides.com/zanarmstrong/deck-2">Intro to Data Visualization for CS teachers<a> in the SF Public School system.</p>
             <p class="sci">Guest teacher at Lowell High School, Lick-Wilmerding High School, Burton High School, AP Giannini Middle School, and BB&N Lower School.</p>
             <p class="sci"><a href="https://docs.google.com/presentation/d/1-gdyFaeqoIs5O3z5SSK7_7lLxdBVUAr2BvYunuy5XcU/edit#slide=id.p">Drawing with Data</a> Workshop</p>
